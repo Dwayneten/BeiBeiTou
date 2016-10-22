@@ -292,6 +292,94 @@ a, p, h1, h2, h3, h4, h5, h6, ul, li, ol, dl, div {
   display: none;
 }
 
+// news section
+.news-wrapper {
+  width: 1080px;
+  min-height: 273px;
+  margin: 0 auto 30px;
+  overflow: hidden;
+}
+.news-panel {
+  width: 528px;
+  min-height: 273px;
+  background-color: #fcfcfc;
+  border-top: 5px solid @theme-red;
+  float: left;
+  padding: 30px 25px 30px 40px;
+  &+& {
+    margin-left: 24px;
+  }
+}
+.news-panel-title {
+  font-size: 24px;
+  color: #333;
+  width: 100%;
+  height: 38px;
+  line-height: 32px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  a {
+    display: block;
+    float: right;
+    text-align: right;
+    color: #218ce5;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+.news-list {
+  width: 100%;
+  a {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-top: 25px;
+    &:hover {
+      color: #4e92d7;
+    }
+    span {
+      float: right;
+    }
+  }
+}
+
+// partner section
+.partner {
+  width: 100%;
+  min-height: 235px;
+  background-color: #fcfcfc;
+}
+.partner-title {
+  font-size: 24px;
+  color: #333;
+  margin: 40px auto;
+  text-align: center;
+}
+.partner-logo-wrapper {
+  width: 1080px;
+  height: 100px;
+  margin: 40px auto;
+  overflow: hidden;
+  position: relative;
+  li {
+    position: absolute;
+  }
+}
+.partner-logo-position(5);
+.partner-logo-position(@n, @i: 1) when (@i <= @n) {
+  .partner-logo-@{i} {
+    left: (@i - 1) * 20%;
+  }
+  .partner-logo-position(@n, (@i + 1));
+}
+
+// footer
+footer {
+  width: 100%;
+  min-height: 320px;
+  background-color: #333;
+}
+
 // debug
 body {
   background-color: #f9f9f9;
