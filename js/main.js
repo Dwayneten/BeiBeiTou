@@ -1,21 +1,28 @@
 function $(id) {
     return document.getElementById(id);
 }
-function init() {
-    var lianbiao = $('data-table-lianbiao');
-    var yuebiao = $('data-table-yuebiao');
-}
+
 function showYuebiao() {
-    lianbiao = $('data-table-lianbiao');
-    yuebiao = $('data-table-yuebiao');
+    var lianbiao = $('data-table-lianbiao'),
+        yuebiao = $('data-table-yuebiao'),
+        lianbiaoTab = $('data-tab-lianbiao'),
+        yuebiaoTab = $('data-tab-yuebiao');
+
     lianbiao.style.display = 'none';
     yuebiao.style.display = 'block';
+    lianbiaoTab.classList.remove('data-current-tab');
+    yuebiaoTab.classList.add('data-current-tab');
     return false;
 }
 function showLianbiao() {
-    lianbiao = $('data-table-lianbiao');
-    yuebiao = $('data-table-yuebiao');
+    var lianbiao = $('data-table-lianbiao'),
+        yuebiao = $('data-table-yuebiao'),
+        lianbiaoTab = $('data-tab-lianbiao'),
+        yuebiaoTab = $('data-tab-yuebiao');
+
     lianbiao.style.display = 'block';
     yuebiao.style.display = 'none';
+    lianbiaoTab.classList.add('data-current-tab');
+    yuebiaoTab.classList.remove('data-current-tab');
     return false;
 }
