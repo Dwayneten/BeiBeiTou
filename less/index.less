@@ -1,0 +1,266 @@
+@import "variable.less";
+
+// banner
+.banner-wrapper {
+  width: 100%;
+  height: 421px;
+  overflow: hidden;
+}
+.banner-img {
+  width: 100%;
+}
+
+// count section
+.count-wrapper {
+  width: @content-width;
+  height: 183px;
+  margin: 0 auto 24px;
+  background-color: #fcfcfc;
+  padding: 0 140px;
+  position: relative;
+  &>div {
+    height: 100%;
+    width: 280px;
+    padding-left: 30px;
+  }
+}
+.count-num {
+  border-left: 6px solid @theme-red;
+  padding-left: 12px;
+  color: @theme-red;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 28px;
+  position: relative;
+  top: 60px;
+}
+.count-description {
+  padding-left: 20px;
+  font-size: 20px;
+  position: absolute;
+  bottom: 63px;
+}
+
+// show section
+.show-wrapper {
+  height: 519px;
+  width: @content-width;
+  margin: 0 auto 30px;
+  background-color: #fcfcfc;
+  padding: 0 210px;
+  overflow: hidden;
+  &>div {
+    text-align: center;
+    &+div {
+      margin-left: 150px;
+    }
+  }
+}
+.show-title {
+  font-size: 30px;
+  color: #000;
+  text-align: center;
+  margin: 50px 0;
+  display: block;
+}
+.show-icon {
+  margin: 32px 0;
+  min-height: 125px;
+}
+.show-text {
+  line-height: 36px;
+  font-size: 18px;
+  color: #666;
+}
+
+// data section
+.data-wrapper {
+  width: 1080px;
+  min-height: 500px;
+  margin: 0 auto 30px;
+  background-color: #fcfcfc;
+}
+.data-tab-wrapper {
+  height: 75px;
+  width: 100%;
+}
+.data-tab {
+  width: 50%;
+  background-color: #f3f3f3;
+  text-align: center;
+  float: left;
+  border-top: 5px solid #f3f3f3;
+  span {
+    width: 100%;
+    height: 75px;
+    color: #999;
+    line-height: 75px;
+    font-size: 23px;
+    display: block;
+    cursor: pointer;
+  }
+}
+.data-current-tab {
+  background-color: #fcfcfc;
+  border-top: 5px solid @theme-red;
+  a {
+    color: #000;
+  }
+}
+.data-table-wrapper {
+  padding: 41px 30px 0 36px;
+}
+.data-table {
+  border: none;
+  td {
+    height: 60px;
+    vertical-align: middle;
+  }
+  th {
+    font-size: 18px;
+    color: #666;
+  }
+}
+.data-table-col-1 {
+  width: 360px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+  text-align: left;
+}
+.data-table-col-2, .data-table-col-3, .data-table-col-4, .data-table-col-5, .data-table-col-6 {
+  width: 130px;
+  text-align: center;
+  color: #666;
+}
+.data-table-col-2 {
+  font-size: 24px;
+  color: @theme-red;
+  font-weight: bold;
+}
+.data-table-col-3 {
+  font-size: 16px;
+  span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+.data-table-col-4 span {
+  font-size: 18px;
+  font-weight: bold;
+}
+.data-table-col-5 span {
+  font-weight: bold;
+}
+.data-table-col-6 {
+  a, span {
+    border-radius: 5px;
+    display: block;
+    height: 38px;
+    width: 129px;
+    line-height: 38px;
+    color: #fff;
+  }
+  a {
+    background-color: @theme-red;
+    &:hover {
+      background-color: #ec1900;
+    }
+  }
+  span {
+    background-color: #e1e1e1;
+    cursor: default;
+  }
+}
+.data-table-more a {
+  background: none;
+  color: #218ce5;
+  font-size: 16px;
+  &:hover {
+    background: none;
+  }
+}
+#data-table-yuebiao {
+  display: none;
+}
+
+// news section
+.news-wrapper {
+  width: 1080px;
+  min-height: 273px;
+  margin: 0 auto 30px;
+  overflow: hidden;
+}
+.news-panel {
+  width: 528px;
+  min-height: 273px;
+  background-color: #fcfcfc;
+  border-top: 5px solid @theme-red;
+  float: left;
+  padding: 30px 25px 30px 40px;
+  &+& {
+    margin-left: 24px;
+  }
+}
+.news-panel-title {
+  font-size: 24px;
+  color: #333;
+  width: 100%;
+  height: 38px;
+  line-height: 32px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  a {
+    display: block;
+    float: right;
+    text-align: right;
+    color: #218ce5;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+.news-list {
+  width: 100%;
+  a {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-top: 25px;
+    &:hover {
+      color: #4e92d7;
+    }
+    span {
+      float: right;
+    }
+  }
+}
+
+// partner section
+.partner {
+  width: 100%;
+  min-height: 235px;
+  background-color: #fcfcfc;
+}
+.partner-title {
+  font-size: 24px;
+  color: #333;
+  margin: 40px auto;
+  text-align: center;
+}
+.partner-logo-wrapper {
+  width: 1080px;
+  height: 100px;
+  margin: 40px auto;
+  overflow: hidden;
+  position: relative;
+  li {
+    position: absolute;
+  }
+}
+.partner-logo-position(5);
+.partner-logo-position(@n, @i: 1) when (@i <= @n) {
+  .partner-logo-@{i} {
+    left: (@i - 1) * 20%;
+  }
+  .partner-logo-position(@n, (@i + 1));
+}
