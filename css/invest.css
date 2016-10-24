@@ -1,0 +1,154 @@
+.banner {
+  width: 1080px;
+  height: 170px;
+  overflow: hidden;
+  margin: 30px auto;
+  background-color: #fff;
+}
+.banner img {
+  min-width: 1080px;
+}
+.content {
+  width: 1080px;
+  background-color: #fff;
+  margin: 0 auto 50px;
+}
+.tab-wrapper {
+  width: 100%;
+  height: 45px;
+  background-color: #fafafa;
+}
+.tab-wrapper div {
+  width: 140px;
+  border-top: 5px solid #fafafa;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.tab-wrapper div.current {
+  border-top: 5px solid #ed5f4e;
+  background-color: #fff;
+}
+.table-wrapper {
+  min-height: 1000px;
+  padding: 10px 50px 50px;
+}
+.table-wrapper tr {
+  width: 100%;
+  height: 150px;
+  border-bottom: 1px solid #eee;
+  display: block;
+}
+.table-wrapper .table-col-1 {
+  width: 430px;
+  height: 150px;
+}
+.table-wrapper .title-lianbiao,
+.table-wrapper .title-yuebiao {
+  display: block;
+  position: relative;
+  line-height: 18px;
+  font-size: 18px;
+  margin: 30px 0 100px;
+}
+.table-wrapper .title-icon {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+  position: absolute;
+  top: -5px;
+  right: 0;
+}
+.table-wrapper .title-lianbiao:after {
+  content: "链";
+  background-color: #ed5f4e;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+  position: absolute;
+  top: -5px;
+  right: 0;
+}
+.table-wrapper .title-yuebiao:after {
+  content: "约";
+  background-color: #218ce5;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+  position: absolute;
+  top: -5px;
+  right: 0;
+}
+.table-wrapper .info {
+  position: relative;
+}
+.table-wrapper .info div.left {
+  font-size: 14px;
+  color: #999;
+  position: absolute;
+  bottom: 30px;
+}
+.table-wrapper .number-sum-wrapper {
+  left: 150px;
+}
+.table-wrapper .number-time-wrapper {
+  left: 330px;
+}
+.table-wrapper .number-percent {
+  font-size: 14px;
+  color: #ed5f4e;
+}
+.table-wrapper .number-percent span {
+  font-size: 30px;
+  font-weight: bold;
+}
+.table-wrapper .number-sum,
+.table-wrapper .number-time {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+.table-wrapper .table-col-2 {
+  width: 400px;
+  height: 150px;
+}
+.table-wrapper .table-col-3 {
+  width: 150px;
+  height: 150px;
+  line-height: 30px;
+  text-align: center;
+  position: relative;
+}
+.table-wrapper .table-col-3 a,
+.table-wrapper .table-col-3 span {
+  width: 100px;
+  font-size: 14px;
+  color: #fff;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.table-wrapper .table-col-3 a {
+  background-color: #ed5f4e;
+}
+.table-wrapper .table-col-3 span {
+  background-color: #a4a6a7;
+  cursor: default;
+}

@@ -1,2 +1,136 @@
 @import "variable.less";
 
+// banner section
+.banner {
+  width: 1080px;
+  height: 170px;
+  overflow: hidden;
+  margin: 30px auto;
+  background-color: #fff;
+  img {
+    min-width: 1080px;
+  }
+}
+
+// content section
+.content {
+  width: 1080px;
+  background-color: #fff;
+  margin: 0 auto 50px;
+}
+.tab-wrapper {
+  width: 100%;
+  height: 45px;
+  background-color: #fafafa;
+  div {
+    width: 140px;
+    border-top: 5px solid #fafafa;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    &.current {
+      border-top: 5px solid @theme-red;
+      background-color: #fff;
+    }
+  }
+}
+.table-wrapper {
+  min-height: 1000px;
+  padding: 10px 50px 50px;
+  tr {
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid #eee;
+    display: block;
+  }
+  .table-col-1 {
+    width: 430px;
+    height: 150px;
+  }
+  .title-lianbiao, .title-yuebiao {
+    display: block;
+    position: relative;
+    line-height: 18px;
+    font-size: 18px;
+    margin: 30px 0 100px;
+  }
+  .title-icon {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    position: absolute;
+    top: -5px;
+    right: 0;
+  }
+  .title-lianbiao:after {
+    content: "链";
+    background-color: @theme-red;
+    .title-icon
+  }
+  .title-yuebiao:after {
+    content: "约";
+    background-color: #218ce5;
+    .title-icon
+  }
+  .info {
+    position: relative;
+    div.left{
+      font-size: 14px;
+      color: #999;
+      position: absolute;
+      bottom: 30px;
+    }
+  }
+  .number-sum-wrapper {
+    left: 150px;
+  }
+  .number-time-wrapper {
+    left: 330px;
+  }
+  .number-percent {
+    font-size: 14px;
+    color: @theme-red;
+    span {
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+  .number-sum, .number-time {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+  }
+  .table-col-2 {
+    width: 400px;
+    height: 150px;
+  }
+  .table-col-3 {
+    width: 150px;
+    height: 150px;
+    line-height: 30px;
+    text-align: center;
+    position: relative;
+    a, span {
+      width: 100px;
+      font-size: 14px;
+      color: #fff;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    a {
+      background-color: @theme-red;
+    }
+    span {
+      background-color: #a4a6a7;
+      cursor: default;
+    }
+  }
+}
