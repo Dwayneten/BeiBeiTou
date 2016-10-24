@@ -1,0 +1,56 @@
+@import "variable.less";
+
+// content
+.content {
+  width: 1080px;
+  overflow: hidden;
+  margin: 30px auto 60px;
+  color: #a4a6a7;
+  .left-panel {
+    width: 175px;
+    min-height: 440px;
+    background-color: #fff;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  .right-panel {
+    width: 885px;
+    background-color: #fff;
+    font-size: 16px;
+    padding: 40px 60px;
+    color: #000;
+    h1 {
+      display: block;
+      padding-left: 10px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 36px;
+      border-bottom: 1px solid #a4a6a7;
+    }
+    h2 {
+      display: block;
+      margin-top: 20px;
+      color: @theme-red;
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: normal;
+    }
+    p {
+      line-height: 28px;
+      font-size: 18px;
+      text-indent: 2em;
+      font-weight: normal;
+    }
+    img {
+      margin: 10px auto;
+      max-width: 765px;
+    }
+    .key-word {
+      margin-top: 40px;
+      font-size: 16px;
+      color: @theme-red;
+      font-weight: bold;
+    }
+  }
+}
