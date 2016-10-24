@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>贝贝投-网贷理财,投资理财,行业领先的互联网理财平台！</title>
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="贝贝投官网,互联网理财,P2P理财,互联网金融,个人理财,投资理财,p2p网贷,网络借贷">
+    <meta name="description" content="贝贝投,是一家行业领先的互联网理财平台,互联网理财网贷理财平台,专注供应链金融,致力于为你实现财富稳健增值,互联网理财首选。">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bidAction.min.css">
+    <!-- javascript -->
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar-wrapper">
+    <div class="navbar">
+        <a href="./" class="logo-wrapper">
+            <img src="img/logo.png" alt="贝贝投" class="logo">
+        </a>
+        <ul class="nav">
+            <li><a href="./">首页</a></li>
+            <li><a href="">我要理财</a></li>
+            <li class="nav-current"><a href="#">我要借款</a></li>
+            <li><a href="wealthinfomation.html">信息披露</a></li>
+            <li><a href="aboutUs.html">关于我们</a></li>
+        </ul>
+        <div class="nav-app left"><a href="">客户端</a></div>
+        <div class="nav-user-wrapper left"><a href="" id="nav-login">登录</a> / <a href="">注册</a></div>
+    </div>
+</nav>
+
+
+<!-- content -->
+<section class="content">
+    <div class="title">
+        借款意向
+    </div>
+    <div class="form-wrapper">
+        <div class="left-panel left">
+            <table>
+                <tr>
+                    <td>真实姓名</td>
+                    <td><input type="text" name="realName" id="realName" placeholder="请输入您的真实姓名"></td>
+                    <td class="hint-text">请输入姓名</td>
+                </tr>
+                <tr>
+                    <td>手机号码</td>
+                    <td><input type="text" name="telPhone" id="telPhone" placeholder="请输入您的手机号码"></td>
+                    <td class="hint-text">请输入手机号</td>
+                </tr>
+                <tr>
+                    <td>借款金额</td>
+                    <td><input type="text" name="loanMany" id="loanMany" placeholder="请输入您的借款金额"><span>元</span></td>
+                    <td class="hint-text">请输入金额</td>
+                </tr>
+                <tr>
+                    <td>借款类型</td>
+                    <td>
+                        <select name="loan_type" size="1" id="productsName">
+                            <option value="5供应链">
+                                5供应链
+                            </option>
+                        </select>
+                    </td>
+                    <td class="hint-text">请选择类型</td>
+                </tr>
+                <tr>
+                    <td>所在地区</td>
+                    <td>
+                        <select name="province" size="1" id="province">
+                            <option value="110000">北京市
+                            </option>
+                            <option value="120000">天津市
+                            </option>
+                            <option value="130000">河北省
+                            </option>
+                            <option value="140000">山西省
+                            </option>
+                            <option value="150000">内蒙古自治区
+                            </option>
+                            <option value="210000">辽宁省
+                            </option>
+                            <option value="220000">吉林省
+                            </option>
+                            <option value="230000">黑龙江省
+                            </option>
+                            <option value="310000">上海市
+                            </option>
+                            <option value="320000">江苏省
+                            </option>
+                            <option value="330000">浙江省
+                            </option>
+                            <option value="340000">安徽省
+                            </option>
+                            <option value="350000">福建省
+                            </option>
+                            <option value="360000">江西省
+                            </option>
+                            <option value="370000">山东省
+                            </option>
+                            <option value="410000">河南省
+                            </option>
+                            <option value="420000">湖北省
+                            </option>
+                            <option value="430000">湖南省
+                            </option>
+                            <option value="440000">广东省
+                            </option>
+                            <option value="450000">广西壮族自治区
+                            </option>
+                            <option value="460000">海南省
+                            </option>
+                            <option value="500000">重庆市
+                            </option>
+                            <option value="510000">四川省
+                            </option>
+                            <option value="520000">贵州省
+                            </option>
+                            <option value="530000">云南省
+                            </option>
+                            <option value="540000">西藏自治区
+                            </option>
+                            <option value="610000">陕西省
+                            </option>
+                            <option value="620000">甘肃省
+                            </option>
+                            <option value="630000">青海省
+                            </option>
+                            <option value="640000">宁夏回族自治区
+                            </option>
+                            <option value="650000">新疆维吾尔自治区
+                            </option>
+                            <option value="0" selected="">-- 请选择 --</option>
+                        </select>
+                        <select name="city" size="1" id="city">
+                            <option value="0" selected="">-- 请选择 --</option>
+                        </select>
+                    </td>
+                    <td class="hint-text">请选择地区</td>
+                </tr>
+                <tr>
+                    <td>验&nbsp;&nbsp;证&nbsp;&nbsp;码</td>
+                    <td><input type="text" name="code" id="code" value><div id="code-wrapper"><a href=""><img src="img/temp_code.png" alt=""></a></div></td>
+                    <td class="hint-text">验证码不正确</td>
+                </tr>
+            </table>
+        </div>
+        <div class="right-panel left">
+            <span>备注</span>
+            <textarea name="beizhu" id="beizhu"></textarea>
+            <span class="hint-text">备注不能为空</span>
+        </div>
+        <div class="button-panel clearfix">
+            <p><input type="checkbox" checked="checked" id="agreement">我已阅读并同意<a onclick="showLoanDownProtocol();">《贝贝投借款协议》</a></p>
+            <input type="button" value="提交申请" onclick="applyLoan()">
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<footer class="clearfix">
+    <div class="footer-wrapper">
+        <div class="footer-col-link">
+            <span class="footer-col-link-title">产品</span>
+            <a href="">理财须知</a>
+            <a href="">借款须知</a>
+            <a href="">理财技巧</a>
+            <a href="">利息计算器</a>
+        </div>
+        <div class="footer-col-link">
+            <span class="footer-col-link-title">公司</span>
+            <a href="">关于我们</a>
+            <a href="">加入我们</a>
+            <a href="">合作伙伴</a>
+            <a href="">媒体报道</a>
+        </div>
+        <div class="footer-col-link footer-col-link-icon">
+            <span class="footer-col-link-title">联系我们</span>
+            <a href="">微信</a>
+            <a href="">新浪微博</a>
+            <a href="">在线客服</a>
+            <a href="">企业邮箱</a>
+        </div>
+        <div class="footer-col-qrcode">
+            扫码关注微信公众账号
+            <img src="img/QRcode.png" alt="">
+        </div>
+        <div class="footer-col-contact">
+            <p>请加官方一群：<a href=""><img src="img/group.png" alt=""></a></p>
+            <p>客服电话(工作时间: 8:30-17:30)</p>
+            <p class="footer-col-contact-phone">400-889-3878</p>
+            <p>座机电话: 0755-85250323</p>
+        </div>
+    </div>
+</footer>
+
+<!-- sidebar -->
+<section class="sidebar-wrapper">
+    <a href="#" class="sidebar-top"> </a>
+    <a href=""> </a>
+    <a href=""> </a>
+    <a href=""> </a>
+    <a href=""> </a>
+</section>
+</body>
+</html>
