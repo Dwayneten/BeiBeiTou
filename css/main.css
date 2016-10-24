@@ -21,12 +21,6 @@ a {
 a:hover {
   color: #ed5f4e;
 }
-@font-face {
-  font-family: 'fzlantingheis-r-gbregular';
-  src: url('../fonts/fzlthjw-webfont.woff2') format('woff2'), url('../fonts/fzlthjw-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 a,
 p,
 h1,
@@ -40,7 +34,7 @@ li,
 ol,
 dl,
 div {
-  font-family: 'fzlantingheis-r-gbregular', "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   font-size: 16px;
 }
 .left {
