@@ -1,0 +1,19 @@
+.content {
+  width: 1080px;
+  min-height: 1px;
+  margin: 30px auto 45px;
+  background-color: #fff;
+}
+.title {
+  border-top: 5px solid #ed5f4e;
+  background-color: #fafafa;
+  height: 45px;
+  width: 100%;
+  padding-left: 30px;
+  line-height: 40px;
+  font-size: 18px;
+  color: #333;
+}
+.form-wrapper {
+  width: 100%;
+}
