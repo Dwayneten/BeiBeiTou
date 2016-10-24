@@ -1,0 +1,125 @@
+.content {
+  width: 1080px;
+  min-height: 1px;
+  margin: 30px auto 45px;
+  background-color: #fff;
+}
+.title {
+  border-top: 5px solid #ed5f4e;
+  background-color: #fafafa;
+  height: 45px;
+  width: 100%;
+  padding-left: 30px;
+  line-height: 40px;
+  font-size: 18px;
+  color: #333;
+}
+.form-wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 30px;
+}
+.form-wrapper .left-panel {
+  width: 50%;
+  padding: 20px 20px 30px 60px;
+  border-right: 1px solid #d4d6d7;
+}
+.form-wrapper .left-panel tr {
+  width: 100%;
+  height: 60px;
+  padding: 10px 0;
+}
+.form-wrapper .left-panel td {
+  height: 40px;
+  line-height: 40px;
+  padding-right: 10px;
+  position: relative;
+}
+.form-wrapper .left-panel td input,
+.form-wrapper .left-panel td select {
+  width: 240px;
+  height: 40px;
+  padding-left: 10px;
+  border: 1px solid #d4d6d7;
+  font-size: 14px;
+  color: #999;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+.form-wrapper .left-panel #province,
+.form-wrapper .left-panel #code {
+  margin-right: 10px;
+}
+.form-wrapper .left-panel #province,
+.form-wrapper .left-panel #city,
+.form-wrapper .left-panel #code,
+.form-wrapper .left-panel #code-wrapper {
+  width: 115px;
+  float: left;
+}
+.form-wrapper .left-panel #code-wrapper img {
+  max-width: 115px;
+}
+.form-wrapper .left-panel #loanMany {
+  padding-right: 20px;
+}
+.form-wrapper .left-panel #loanMany + span {
+  font-size: 14px;
+  color: #999;
+  position: absolute;
+  top: 11px;
+  right: 17px;
+}
+.form-wrapper .right-panel {
+  width: 50%;
+  padding: 55px 0 50px;
+}
+.form-wrapper .right-panel span {
+  display: block;
+  margin: 0 0 10px 55px;
+}
+.form-wrapper .right-panel textarea {
+  display: block;
+  margin: 0 auto 10px;
+  width: 440px;
+  height: 260px;
+  resize: none;
+  border: 1px solid #d4d6d7;
+}
+.form-wrapper .button-panel {
+  width: 100%;
+  height: 150px;
+  padding: 40px 0;
+  text-align: center;
+  overflow: hidden;
+  font-size: 14px;
+}
+.form-wrapper .button-panel a {
+  transition: 0.2s;
+}
+.form-wrapper .button-panel input[type="checkbox"] {
+  margin-right: 10px;
+  vertical-align: -1px;
+}
+.form-wrapper .button-panel input[type="button"] {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ed5f4e;
+  color: #fff;
+  display: block;
+  margin: 10px auto;
+  border: none;
+  cursor: pointer;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-size: 16px;
+}
+.form-wrapper .button-panel input[type="button"]:focus {
+  outline: none;
+}
+.form-wrapper .button-panel input[type="button"]:active {
+  background-color: #cd4f3e;
+}
+.form-wrapper .hint-text {
+  font-size: 14px;
+  color: #ed5f4e;
+}
