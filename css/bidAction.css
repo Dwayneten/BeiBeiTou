@@ -39,7 +39,7 @@
 .form-wrapper .left-panel td select {
   width: 240px;
   height: 40px;
-  padding-left: 10px;
+  padding: 0 10px;
   border: 1px solid #d4d6d7;
   font-size: 14px;
   color: #999;
@@ -84,6 +84,10 @@
   height: 260px;
   resize: none;
   border: 1px solid #d4d6d7;
+  font-size: 14px;
+  color: #999;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  padding: 10px 15px;
 }
 .form-wrapper .button-panel {
   width: 100%;

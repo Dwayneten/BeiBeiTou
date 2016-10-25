@@ -249,6 +249,14 @@
                 </table>
             </div>
             <div id="content-comment">
+                <p>我要提问：（字数在1-200之间）</p>
+                <textarea name="comment" id="comment"></textarea>
+                <div class="right button-group">
+                    <p><span>*</span>图形验证码:</p>
+                    <input type="text" id="code" name="code">
+                    <a href=""><img src="img/temp_code.png" alt=""></a>
+                    <input type="button" value="提交" onclick="commitComment();">
+                </div>
             </div>
         </div>
     </section>
