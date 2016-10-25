@@ -55,16 +55,38 @@
 }
 
 // row 2
-.row-2-col-1 {
+.row-2-col-1, .row-2-col-2 {
   .panel;
   width: 432px;
   height: 135px;
+  padding: 20px 30px;
+  p {
+    font-size: 18px;
+    color: #333;
+    span {
+      color: @theme-red;
+      font-size: 24px;
+    }
+  }
+}
+.row-2-col-1 {
   margin-right: 21px;
+  .global-button-a {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    margin-top: 25px;
+    margin-right: 20px;
+  }
 }
 .row-2-col-2 {
-  .panel;
-  width: 432px;
-  height: 135px;
+  .global-button-a {
+    width: 260px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 25px;
+  }
 }
 
 // row 3
