@@ -197,10 +197,14 @@
 #content-info, #content-record, #content-comment {
   display: none;
 }
+
+// tab 1
 #content-chain {
   line-height: 28px;
   color: #666;
 }
+
+// tab 2
 #content-info table {
   font-size: 14px;
   color: #999;
@@ -232,6 +236,49 @@
       &+img {
         margin-left: 33px;
       }
+    }
+  }
+}
+
+// tab 3
+#content-record {
+  font-size: 14px;
+  color: #999;
+  table {
+    empty-cells: show;
+    border-collapse: collapse;
+    th {
+      font-size: 16px;
+      font-weight: normal;
+    }
+    th, td {
+      text-align: center;
+      padding: 0 20px;
+      line-height: 45px;
+    }
+    tr:nth-child(odd) {
+      background-color: #fafafa;
+    }
+    tr:nth-child(even) {
+      background-color: #fff;
+    }
+    td:nth-child(odd) {
+      color: #333;
+    }
+    .col-1 {
+      width: 150px;
+    }
+    .col-2 {
+      width: 200px;
+    }
+    .col-3 {
+      width: 220px;
+    }
+    .col-4 {
+      width: 250px;
+    }
+    .col-5 {
+      width: 260px;
     }
   }
 }
