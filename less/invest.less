@@ -28,7 +28,8 @@
     text-align: center;
     line-height: 40px;
     cursor: pointer;
-    &.current {
+    transition: 0.2s;
+    &.current, &:hover {
       border-top: 5px solid @theme-red;
       background-color: #fff;
     }
