@@ -6,6 +6,164 @@
   height: 310px;
   background-color: #fff;
   margin: 30px auto;
+  padding: 20px 40px;
+  position: relative;
+  .title {
+    display: block;
+    width: 100%;
+    height: 35px;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #e1e1e1;
+    font-weight: normal;
+  }
+  .name {
+    margin-right: 50px;
+  }
+
+  // left panel
+  .left-panel {
+    padding-left: 10px;
+    width: 700px;
+    height: 100%;
+    font-size: 16px;
+    color: #999;
+  }
+
+  // row 1
+  .row-1 {
+    min-height: 70px;
+    margin: 35px 0 40px;
+  }
+  .number-percent-wrapper {
+    width: 220px;
+  }
+  .number-percent {
+    font-size: 14px;
+    color: @theme-red;
+    span {
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+  .number-sum-wrapper {
+    width: 260px;
+  }
+  .number-time-wrapper {
+    width: 210px;
+  }
+  .number-sum, .number-time {
+    font-size: 30px;
+    color: #333;
+  }
+
+  // row 2
+  .row-2 {
+    height: 130px;
+  }
+  .col-1 {
+    width: 280px;
+    .status {
+      margin-top: 32px;
+    }
+  }
+  .process-wrapper {
+    position: relative;
+    width: 200px;
+    height: 8px;
+    .total, .current {
+      height: 8px;
+      border-radius: 4px;
+      position: absolute;
+      top: 10px;
+      left: 0;
+    }
+    .total {
+      z-index: 1;
+      background-color: #f5f5f5;
+      width: 100%;
+    }
+    .current {
+      z-index: 2;
+      background-color: @theme-red;
+      width: 100%;
+    }
+    .demo {
+      width: 59%;
+    }
+  }
+  .col-2, .col-3 {
+    width: 200px;
+    p {
+      margin-bottom: 18px;
+    }
+    span {
+      color: #000;
+    }
+  }
+  .left-time {
+    span {
+      color: @theme-red;
+    }
+  }
+
+  .spt {
+    width: 1px;
+    height: 210px;
+    background-color: #e1e1e1;
+    position: absolute;
+    top: 75px;
+  }
+
+  // right panel
+  .right-panel {
+    padding: 20px 0 0 30px;
+    width: 300px;
+    height: 100%;
+    p {
+      color: #999;
+    }
+    .left-money {
+      font-size: 30px;
+      color: @theme-red;
+      margin-bottom: 10px;
+      display: block;
+      text-align: right;
+      padding-right: 20px;
+    }
+  }
+  .protocol {
+    font-size: 14px;
+    color: #999;
+    display: block;
+    margin: 10px 0 15px;
+    a {
+      font-size: 14px;
+      transition: 0.2s;
+      color: #218ce5;
+    }
+  }
+  input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: -1px;
+  }
+  input[type="text"], [type="button"] {
+    width: 250px;
+    height: 40px;
+  }
+  input[type="text"] {
+    padding-left: 10px;
+    border: 1px solid #d4d6d7;
+    font-size: 16px;
+    color: #999;
+    font-family: @font-global;
+  }
+  input[type="button"] {
+    background-color: @theme-red;
+    color: #fff;
+    text-align: center;
+    border: none;
+  }
 }
 
 // info section
