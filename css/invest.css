@@ -24,8 +24,10 @@
   text-align: center;
   line-height: 40px;
   cursor: pointer;
+  transition: 0.2s;
 }
-.tab-wrapper div.current {
+.tab-wrapper div.current,
+.tab-wrapper div:hover {
   border-top: 5px solid #ed5f4e;
   background-color: #fff;
 }

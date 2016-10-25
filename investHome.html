@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>贝贝投-网贷理财,投资理财,行业领先的互联网理财平台！</title>
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="贝贝投官网,互联网理财,P2P理财,互联网金融,个人理财,投资理财,p2p网贷,网络借贷">
+    <meta name="description" content="贝贝投,是一家行业领先的互联网理财平台,互联网理财网贷理财平台,专注供应链金融,致力于为你实现财富稳健增值,互联网理财首选。">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="css/investHome.min.css">
+    <!-- javascript -->
+    <script type="text/javascript" src="js/investHome.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar-wrapper">
+        <div class="navbar">
+            <a href="./" class="logo-wrapper">
+                <img src="img/logo.png" alt="贝贝投" class="logo">
+            </a>
+            <ul class="nav">
+                <li><a href="./">首页</a></li>
+                <li class="nav-current"><a href="invest.html">我要理财</a></li>
+                <li><a href="bidAction.html">我要借款</a></li>
+                <li><a href="wealthinfomation.html">信息披露</a></li>
+                <li><a href="aboutUs.html">关于我们</a></li>
+            </ul>
+            <div class="nav-app left"><a href="">客户端</a></div>
+            <div class="nav-user-wrapper left"><a href="" id="nav-login">登录</a> / <a href="">注册</a></div>
+        </div>
+    </nav>
+
+    <!-- data -->
+    <section class="data-wrapper">
+        <h1 class="title"><span class="name">蒙牛经销商-泰德利融资1期【4】约标奖年化3%</span><span class="no">编号：J245</span></h1>
+        <div class="left-panel left">
+            <div class="left row-1 number-percent-wrapper"><div class="number-percent"><span>10.0</span>%</div>预期年化收益率</div>
+            <div class="left row-1 number-sum-wrapper"><div class="number-sum">￥150,000.00元</div>借款总额</div>
+            <div class="left row-1 number-time-wrapper"><div class="number-time">2个月</div>理财期限</div>
+            <div class="left row-2 col-1">
+                <div class="process-wrapper"><span class="total"></span><span class="current demo"></span></div>
+                <p class="status">已完成<span class="finish">60</span>%，满标后第二天起计息</p>
+            </div>
+            <div class="left row-2 col-2">
+                <p class="type">还款方式：<span>一次性还款</span></p>
+                <p class="status">目前状态：<span>筹款中</span></p>
+            </div>
+            <div class="left row-2 col-3">
+                <p class="left-time">剩余时间：<span>5天22小时48分</span></p>
+                <p class="start-time">发表时间：<span>2016-10-01</span></p>
+            </div>
+        </div>
+        <span class="left spt"></span>
+        <div class="right-panel left">
+            <p>剩余金额</p>
+            <p class="left-money">￥<span>150,000.000</span>元</p>
+            <input type="text" id="investAmount" name="investAmount" placeholder="100元起投">
+            <p class="protocol"><input type="checkbox" id="agreement" name="agreement">我同意<a onclick="showProtocol();">《贝贝投出借咨询与服务协议》</a></p>
+            <input type="button" value="立即投资" onclick="investApplyNow();">
+        </div>
+    </section>
+
+    <!-- info -->
+    <section class="info-wrapper">
+        <div class="tab-wrapper">
+            <div class="left current" id="tab-chain"  onclick="showTab(0);"><span>供应链信息</span></div>
+            <div class="left" id="tab-info"  onclick="showTab(1);"><span>信息披露</span></div>
+            <div class="left" id="tab-record"  onclick="showTab(2);"><span>投资记录</span></div>
+            <div class="left" id="tab-comment"  onclick="showTab(3);"><span>评论</span></div>
+        </div>
+        <div class="info-content">
+            <div id="content-chain">
+                <p>
+                    1.借款人信息<br>
+                    企业名称: 东莞市治中食品有限公司<br>
+                    统一社会信用代码：91441900696408919R&nbsp;<br>
+                    法人代表: 王**<br>
+                    法人代表身份证: 445**************<br>
+                    2.企业概况<br>
+                    东莞市治中食品有限公司，创立于2009年，是一家专业代理销售冷冻食品的公司，是蒙牛乳业、伊利集团、雀巢等知名品牌冰品广东省虎门市虎门区传统渠道的指定经销商。公司主要服务于虎门区域所有便利店，共1000余家终端网点合作,年营业额2000万以上，其中蒙牛系列产品销量700万左右。<br>
+                    3.借款用途<br>
+                    指定用于向蒙牛乳业集团支付冰淇淋产品的订货款； 现申请流动资金借款5万元，款项用于支付上述产品采购款。<br>
+                    4.还款来源<br>
+                    第一还款来源：借款人代理蒙牛产品的销售回款；<br>
+                    第二还款来源：借款人股东王志忠先生个人连带担保责任，蒙牛市场区域经理徐XX个人提供连带责任担保。<br>
+                    5.风控措施<br>
+                    A.贝贝投已进行实地调研，对交易的真实性进行审查把控；<br>
+                    B.借款企业提供实际贸易合同，保障借款资金专款专用；<br>
+                    C.贝贝投通过蒙牛SAP系统，了解实际代理销售能力；<br>
+                    D.借款企业核心资产和存货价值约200余万，资产充沛，偿债能力强；<br>
+                    E.法人代表及连带担保人自有两套房产，符合担保能力和条件；<br>
+                    F.蒙牛区域经理及连带责任担保人徐XX拥有对借款期限固定资产和存货处置能力；<br>
+                    G.资金动态监控，供应链进程公示。<br>
+                </p>
+            </div>
+            <div id="content-info">
+                <table>
+                    <tr>
+                        <td>借款企业</td>
+                        <td>深圳市心之谷贸易有限公司</td>
+                    </tr>
+                    <tr>
+                        <td>营业执照号</td>
+                        <td>32423423423423***42</td>
+                    </tr>
+                    <tr>
+                        <td>借款企业</td>
+                        <td>深圳市心之谷贸易有限公司，创立于2005年，是一家专业代理及生产、销售为一体的冷冻食品公司，是蒙牛乳业集团冰淇淋事业部深圳现代渠道的独家代理商，2014年与中国羊肉第一集团企业蒙羊牧业牵手成功。公司主要与沃尔玛、华润万家、天虹、人人乐、新一佳、岁宝、百佳、家乐福等连锁卖场共300余家终端网点合作,年营业额4000万以上。现因经营需要，申请流动资金借款5万元，款项用于支付产品采购款。</td>
+                    </tr>
+                    <tr>
+                        <td>还款来源</td>
+                        <td>借款人以其对沃尔玛应收账款进行担保，该笔应收账款完全覆盖融资金额，资金流向做到实时监管，避免资金挪用，企业法人代表对此借款项目进行担保，对借款本息偿还承担不可撤销的连带责任。</td>
+                    </tr>
+                    <tr>
+                        <td>借款人信息</td>
+                        <td>借款人以其对沃尔玛应收账款进行担保，该笔应收账款完全覆盖融资金额，资金流向做到实时监管，避免资金挪用，企业法人代表对此借款项目进行担保，对借款本息偿还承担不可撤销的连带责任。</td>
+                    </tr>
+                    <tr>
+                        <td>法人代表</td>
+                        <td>张*</td>
+                    </tr>
+                    <tr>
+                        <td>法人代表身份证</td>
+                        <td>230**************</td>
+                    </tr>
+                    <tr>
+                        <td>风控措施</td>
+                        <td>
+                            A.贝贝投专业人士进行实地调研，对交易的真实性进行审查把控。<br />
+                            B.借款企业以沃尔玛应收账款作为借款担保。<br />
+                            C.企业法人代表签订担保合同，对企业借款承担连带责任。<br />
+                            D.资金动态监控，供应链进程公示。<br />
+                        </td>
+                    </tr>
+                </table>
+                <p>资料认证</p>
+                <div class="img-wrapper">
+                    <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
+                </div>
+            </div>
+            <div id="content-record">
+                <table>
+                    <tr>
+                        <th class="col-1">序号</th>
+                        <th class="col-2">投资人</th>
+                        <th class="col-3">投资金额</th>
+                        <th class="col-4">投标状态</th>
+                        <th class="col-5">投标时间</th>
+                    </tr>
+                    <tr>
+                        <td class="col-1">1</td>
+                        <td class="col-2">13***</td>
+                        <td class="col-3">5123.0元</td>
+                        <td class="col-4">正常</td>
+                        <td class="col-5">2016-09-23 07:00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>13***</td>
+                        <td>5123.0元</td>
+                        <td>正常</td>
+                        <td>2016-09-23 07:00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>13***</td>
+                        <td>5123.0元</td>
+                        <td>正常</td>
+                        <td>2016-09-23 07:00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>13***</td>
+                        <td>5123.0元</td>
+                        <td>正常</td>
+                        <td>2016-09-23 07:00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>13***</td>
+                        <td>5123.0元</td>
+                        <td>正常</td>
+                        <td>2016-09-23 07:00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>13***</td>
+                        <td>5123.0元</td>
+                        <td>正常</td>
+                        <td>2016-09-23 07:00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>13***</td>
+                        <td>5123.0元</td>
+                        <td>正常</td>
+                        <td>2016-09-23 07:00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>13***</td>
+                        <td>5123.0元</td>
+                        <td>正常</td>
+                        <td>2016-09-23 07:00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>13***</td>
+                        <td>5123.0元</td>
+                        <td>正常</td>
+                        <td>2016-09-23 07:00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>13***</td>
+                        <td>5123.0元</td>
+                        <td>正常</td>
+                        <td>2016-09-23 07:00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>13***</td>
+                        <td>5123.0元</td>
+                        <td>正常</td>
+                        <td>2016-09-23 07:00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>13***</td>
+                        <td>5123.0元</td>
+                        <td>正常</td>
+                        <td>2016-09-23 07:00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>13***</td>
+                        <td>5123.0元</td>
+                        <td>正常</td>
+                        <td>2016-09-23 07:00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>13***</td>
+                        <td>5123.0元</td>
+                        <td>正常</td>
+                        <td>2016-09-23 07:00</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="content-comment">
+                <p>我要提问：（字数在1-200之间）</p>
+                <textarea name="comment" id="comment"></textarea>
+                <div class="right button-group">
+                    <p><span>*</span>图形验证码:</p>
+                    <input type="text" id="code" name="code">
+                    <a href=""><img src="img/temp_code.png" alt=""></a>
+                    <input type="button" value="提交" onclick="commitComment();">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="clearfix">
+        <div class="footer-wrapper clearfix">
+            <div class="footer-col-link">
+                <span class="footer-col-link-title">产品</span>
+                <a href="">理财须知</a>
+                <a href="">借款须知</a>
+                <a href="">理财技巧</a>
+                <a href="">利息计算器</a>
+            </div>
+            <div class="footer-col-link">
+                <span class="footer-col-link-title">公司</span>
+                <a href="">关于我们</a>
+                <a href="">加入我们</a>
+                <a href="">合作伙伴</a>
+                <a href="">媒体报道</a>
+            </div>
+            <div class="footer-col-link footer-col-link-icon">
+                <span class="footer-col-link-title">联系我们</span>
+                <a href="">微信</a>
+                <a href="">新浪微博</a>
+                <a href="">在线客服</a>
+                <a href="">企业邮箱</a>
+            </div>
+            <div class="footer-col-qrcode">
+                扫码关注微信公众账号
+                <img src="img/QRcode.png" alt="">
+            </div>
+            <div class="footer-col-contact">
+                <p>请加官方一群：<a href=""><img src="img/group.png" alt=""></a></p>
+                <p>客服电话(工作时间: 8:30-17:30)</p>
+                <p class="footer-col-contact-phone">400-889-3878</p>
+                <p>座机电话: 0755-85250323</p>
+            </div>
+        </div>
+        <div class="footer-icp-number">
+            深圳贝贝投微金融服务有限公司 | 总部地址：深圳·龙华新区·民治街道民康路284号东明大厦908 | 粤ICP备14088957号-1
+        </div>
+    </footer>
+
+    <!-- sidebar -->
+    <section class="sidebar-wrapper">
+        <a href="#" class="sidebar-top"> </a>
+        <a href=""> </a>
+        <a href=""> </a>
+        <a href=""> </a>
+        <a href=""> </a>
+    </section>
+</body>
+</html>
