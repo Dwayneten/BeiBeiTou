@@ -1,0 +1,211 @@
+@import "variable.less";
+
+// banner section
+.banner {
+  width: 1080px;
+  height: 170px;
+  overflow: hidden;
+  margin: 30px auto;
+  background-color: #fff;
+  img {
+    min-width: 1080px;
+  }
+}
+
+// content section
+.content {
+  width: 1080px;
+  background-color: #fff;
+  margin: 0 auto 50px;
+}
+.tab-wrapper {
+  width: 100%;
+  height: 45px;
+  background-color: #fafafa;
+  div {
+    width: 140px;
+    border-top: 5px solid #fafafa;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    &.current {
+      border-top: 5px solid @theme-red;
+      background-color: #fff;
+    }
+  }
+}
+.table-wrapper {
+  min-height: 1000px;
+  padding: 10px 50px 50px;
+  tr {
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid #eee;
+    display: block;
+  }
+
+  // columns 1
+  .table-col-1 {
+    width: 430px;
+    height: 150px;
+  }
+  .title-lianbiao, .title-yuebiao {
+    display: block;
+    position: relative;
+    line-height: 18px;
+    font-size: 18px;
+    margin: 30px 0 100px;
+  }
+  .title-icon {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    position: absolute;
+    top: -5px;
+    right: 0;
+  }
+  .title-lianbiao:after {
+    content: "链";
+    background-color: @theme-red;
+    .title-icon
+  }
+  .title-yuebiao:after {
+    content: "约";
+    background-color: #218ce5;
+    .title-icon
+  }
+  .info {
+    position: relative;
+    div.left{
+      font-size: 14px;
+      color: #999;
+      position: absolute;
+      bottom: 30px;
+    }
+  }
+  .number-sum-wrapper {
+    left: 150px;
+  }
+  .number-time-wrapper {
+    left: 330px;
+  }
+  .number-percent {
+    font-size: 14px;
+    color: @theme-red;
+    span {
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+  .number-sum, .number-time {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+  }
+
+  // columns 2
+  .table-col-2 {
+    width: 400px;
+    height: 150px;
+    padding: 0 80px 0 90px;
+  }
+  .no {
+    font-size: 16px;
+    color: #333;
+  }
+  .process-wrapper {
+    position: relative;
+    width: 230px;
+    height: 8px;
+    margin: 20px 0 10px;
+    .total, .current {
+      height: 8px;
+      border-radius: 4px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .total {
+      z-index: 1;
+      background-color: #f1f1f1;
+      width: 230px;
+    }
+    .current {
+      z-index: 2;
+      background-color: @theme-red;
+      width: 100%;
+    }
+    .demo {
+      width: 59%;
+    }
+  }
+  .status {
+    color: #999;
+    font-size: 14px;
+  }
+
+  // columns 3
+  .table-col-3 {
+    width: 150px;
+    height: 150px;
+    line-height: 30px;
+    text-align: center;
+    position: relative;
+    a, span {
+      width: 100px;
+      font-size: 14px;
+      color: #fff;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    a {
+      background-color: @theme-red;
+      &:hover {
+        background-color: #ec1900;
+      }
+    }
+    span {
+      background-color: #ddd;
+      cursor: default;
+    }
+  }
+}
+
+// page navigation
+.page-nav-wrapper{
+  width: 458px;
+  height: 32px;
+  margin: 50px auto 0;
+  span {
+    display: block;
+    float: left;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: 0.2s;
+    &+span {
+      margin-left: 12px;
+    }
+    &.current, &:hover {
+      background-color: @theme-red;
+      color: #fff;
+      border: none;
+    }
+  }
+  .prev, .next {
+    width: 90px;
+  }
+}
