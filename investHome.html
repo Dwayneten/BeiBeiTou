@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
     <link rel="stylesheet" type="text/css" href="css/investHome.min.css">
     <!-- javascript -->
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/investHome.js"></script>
 </head>
 <body>
     <!-- navbar -->
@@ -64,13 +64,13 @@
     <!-- info -->
     <section class="info-wrapper">
         <div class="tab-wrapper">
-            <div class="left current" id="tab-chain"><span onclick="showChain()">供应链信息</span></div>
-            <div class="left" id="tab-info"><span onclick="showInfo()">信息披露</span></div>
-            <div class="left" id="tab-record"><span onclick="showRecord()">投资记录</span></div>
-            <div class="left" id="tab-comment"><span onclick="showComment()">评论</span></div>
+            <div class="left current" id="tab-chain"  onclick="showTab(0);"><span>供应链信息</span></div>
+            <div class="left" id="tab-info"  onclick="showTab(1);"><span>信息披露</span></div>
+            <div class="left" id="tab-record"  onclick="showTab(2);"><span>投资记录</span></div>
+            <div class="left" id="tab-comment"  onclick="showTab(3);"><span>评论</span></div>
         </div>
         <div class="info-content">
-            <div class="content-chain">
+            <div id="content-chain">
                 <p>
                     1.借款人信息<br>
                     企业名称: 东莞市治中食品有限公司<br>
@@ -93,6 +93,55 @@
                     F.蒙牛区域经理及连带责任担保人徐XX拥有对借款期限固定资产和存货处置能力；<br>
                     G.资金动态监控，供应链进程公示。<br>
                 </p>
+            </div>
+            <div id="content-info">
+                <table>
+                    <tr>
+                        <td>借款企业</td>
+                        <td>深圳市心之谷贸易有限公司</td>
+                    </tr>
+                    <tr>
+                        <td>营业执照号</td>
+                        <td>32423423423423***42</td>
+                    </tr>
+                    <tr>
+                        <td>借款企业</td>
+                        <td>深圳市心之谷贸易有限公司，创立于2005年，是一家专业代理及生产、销售为一体的冷冻食品公司，是蒙牛乳业集团冰淇淋事业部深圳现代渠道的独家代理商，2014年与中国羊肉第一集团企业蒙羊牧业牵手成功。公司主要与沃尔玛、华润万家、天虹、人人乐、新一佳、岁宝、百佳、家乐福等连锁卖场共300余家终端网点合作,年营业额4000万以上。现因经营需要，申请流动资金借款5万元，款项用于支付产品采购款。</td>
+                    </tr>
+                    <tr>
+                        <td>还款来源</td>
+                        <td>借款人以其对沃尔玛应收账款进行担保，该笔应收账款完全覆盖融资金额，资金流向做到实时监管，避免资金挪用，企业法人代表对此借款项目进行担保，对借款本息偿还承担不可撤销的连带责任。</td>
+                    </tr>
+                    <tr>
+                        <td>借款人信息</td>
+                        <td>借款人以其对沃尔玛应收账款进行担保，该笔应收账款完全覆盖融资金额，资金流向做到实时监管，避免资金挪用，企业法人代表对此借款项目进行担保，对借款本息偿还承担不可撤销的连带责任。</td>
+                    </tr>
+                    <tr>
+                        <td>法人代表</td>
+                        <td>张*</td>
+                    </tr>
+                    <tr>
+                        <td>法人代表身份证</td>
+                        <td>230**************</td>
+                    </tr>
+                    <tr>
+                        <td>风控措施</td>
+                        <td>
+                            A.贝贝投专业人士进行实地调研，对交易的真实性进行审查把控。<br />
+                            B.借款企业以沃尔玛应收账款作为借款担保。<br />
+                            C.企业法人代表签订担保合同，对企业借款承担连带责任。<br />
+                            D.资金动态监控，供应链进程公示。<br />
+                        </td>
+                    </tr>
+                </table>
+                <p>资料认证</p>
+                <div class="img-wrapper">
+                    <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
+                </div>
+            </div>
+            <div id="content-record">
+            </div>
+            <div id="content-comment">
             </div>
         </div>
     </section>
