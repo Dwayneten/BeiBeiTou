@@ -1,86 +1,154 @@
-.Partner{
-    width: 1080px;
-    height: 682px;
-    background-color: #fff;
-    margin: 21px auto 77px auto;
+.tab {
+  width: 1080px;
+  height: 60px;
+  margin: 30px auto;
 }
-.Partner div{
-    margin: auto;
+.tab li {
+  float: left;
+  position: relative;
 }
-.Partner-title{
-    font-size: 24px;
-    text-align: left;
-    color: #666;
-    font-family: FZLTHJW--GB1-0, sans-serif;
+.tab li a {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  width: 180px;
+  height: 100%;
+  color: #666;
+  background-color: #f1f1f1;
+  line-height: 60px;
 }
-.content-text{
-    text-align: left;
-    line-height: 28px;
-    font-size: 14px;
-    color: #666;
-    font-family: FZLTHJW--GB1-0, sans-serif;
+.tab li a:hover,
+.tab li a.current {
+  color: #ed5f4e;
+  background-color: #fff;
 }
-.Partner .content-text{
-    width: 767px;
-    height: 118px;
-    float: right;
-    margin-top: 20px;
+.tab .more-list {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 2;
 }
-.Partner .content-text p{
-    font-size: 14px;
-    line-height: 28px;
-    font-family: FZLTHJW--GB1-0, sans-serif;
+.tab .more-list li {
+  float: none;
 }
-.Partner-2-title{
-    height: 67px;
-    padding-top: 30px;
-    padding-left: 59px;
+.tab .more-list li a {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  width: 180px;
+  height: 100%;
+  color: #666;
+  background-color: #f1f1f1;
+  line-height: 60px;
 }
-.Partner-2-title p{
-    color: #666;
+.tab .more-list li a:hover,
+.tab .more-list li a.current {
+  color: #fff;
+  background-color: #ed5f4e;
 }
-.law{
-    width: 960px;
-    height: 138px;
-    border-top: solid 1px #f1f1f1;
+.tab li:hover > .more-list {
+  display: block;
 }
-.law-img{
-    padding-top: 40px;
-    height: 58px;
-    width: 141px;
-    float: left;
+.tab .tab-more span {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 5px solid #666;
+  position: absolute;
+  right: 55px;
+  top: 28px;
 }
-.gpay{
-    width: 960px;
-    height: 138px;
-    border-top: solid 1px #f1f1f1;
+.tab .current span,
+.tab .tab-more:hover span {
+  border-top: 5px solid #ed5f4e;
 }
-.gpay-img{
-    padding-top: 40px;
-    height: 58px;
-    width: 141px;
-    float: left;
+.content {
+  width: 1080px;
+  margin: 0 auto 80px;
+  background-color: #fff;
 }
-.bao{
-    width: 960px;
-    height: 138px;
-    border-top: solid 1px #f1f1f1;
+.Partner {
+  width: 1080px;
+  height: 682px;
+  background-color: #fff;
+  margin: 21px auto 77px auto;
 }
-.bao-img{
-    padding-top: 40px;
-    height: 58px;
-    width: 141px;
-    float: left;
+.Partner div {
+  margin: auto;
 }
-.wdzj{
-    width: 960px;
-    height: 138px;
-    border-bottom: solid 1px #f1f1f1;
-    border-top: solid 1px #f1f1f1;
+.Partner-title {
+  font-size: 24px;
+  color: #666;
 }
-.wdzj-img{
-    padding-top: 40px;
-    height: 58px;
-    width: 141px;
-    float: left;
+.content-text {
+  text-align: left;
+  line-height: 28px;
+  font-size: 14px;
+  color: #666;
+}
+.Partner .content-text {
+  width: 767px;
+  height: 118px;
+  float: right;
+  margin-top: 20px;
+}
+.Partner .content-text p {
+  font-size: 14px;
+  line-height: 28px;
+}
+.Partner-2-title {
+  padding-top: 30px;
+  padding-left: 59px;
+  display: block;
+  margin-bottom: 10px;
+}
+.Partner-2-title p {
+  color: #666;
+}
+.law {
+  width: 960px;
+  height: 138px;
+  border-top: solid 1px #f1f1f1;
+}
+.law-img {
+  padding-top: 40px;
+  height: 58px;
+  width: 141px;
+  float: left;
+}
+.gpay {
+  width: 960px;
+  height: 138px;
+  border-top: solid 1px #f1f1f1;
+}
+.gpay-img {
+  padding-top: 40px;
+  height: 58px;
+  width: 141px;
+  float: left;
+}
+.bao {
+  width: 960px;
+  height: 138px;
+  border-top: solid 1px #f1f1f1;
+}
+.bao-img {
+  padding-top: 40px;
+  height: 58px;
+  width: 141px;
+  float: left;
+}
+.wdzj {
+  width: 960px;
+  height: 138px;
+  border-bottom: solid 1px #f1f1f1;
+  border-top: solid 1px #f1f1f1;
+}
+.wdzj-img {
+  padding-top: 40px;
+  height: 58px;
+  width: 141px;
+  float: left;
 }
