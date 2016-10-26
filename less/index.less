@@ -76,7 +76,7 @@
 // data section
 .data-wrapper {
   width: 1080px;
-  min-height: 500px;
+  min-height: 598px;
   margin: 0 auto 30px;
   background-color: #fcfcfc;
 }
@@ -107,8 +107,16 @@
     color: #000;
   }
 }
+@keyframes fadein {
+  0% {
+    margin-top: 20px;
+    opacity: 0;
+  }
+}
 .data-table-wrapper {
   padding: 41px 30px 0 36px;
+  margin-top: 0;
+  animation: fadein 0.75s;
 }
 .data-table {
   border: none;
