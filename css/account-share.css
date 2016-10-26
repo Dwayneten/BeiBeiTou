@@ -42,16 +42,17 @@
   width: 885px;
 }
 .global-button-a {
-  background-color: #fff;
-  color: #ed5f4e;
+  background-color: #ed5f4e;
   border: 1px solid #ed5f4e;
+  color: #fff;
   text-align: center;
   display: block;
   transition: 0.2s;
 }
 .global-button-a:hover {
-  background-color: #ed5f4e;
-  color: #fff;
+  background-color: #fff;
+  color: #ed5f4e;
+  border: 1px solid #ed5f4e;
 }
 .global-panel-title {
   width: 100%;

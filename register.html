@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>贝贝投-网贷理财,投资理财,行业领先的互联网理财平台！</title>
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="贝贝投官网,互联网理财,P2P理财,互联网金融,个人理财,投资理财,p2p网贷,网络借贷">
+    <meta name="description" content="贝贝投,是一家行业领先的互联网理财平台,互联网理财网贷理财平台,专注供应链金融,致力于为你实现财富稳健增值,互联网理财首选。">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="css/register.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!-- javascript -->
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar-wrapper">
+    <div class="navbar">
+        <a href="./" class="logo-wrapper">
+            <img src="img/logo.png" alt="贝贝投" class="logo">
+        </a>
+        <ul class="nav">
+            <li><a href="./">首页</a></li>
+            <li><a href="invest.html">我要理财</a></li>
+            <li><a href="bidAction.html">我要借款</a></li>
+            <li><a href="wealthinfomation.html">信息披露</a></li>
+            <li><a href="aboutUs-info.html">关于我们</a></li>
+        </ul>
+        <div class="nav-app left"><a href=""><i class="fa fa-mobile-phone" aria-hidden="true"></i>客户端</a></div>
+        <div class="nav-user-wrapper left"><i class="fa fa-user" aria-hidden="true"></i><a href="" id="nav-login">登录</a> / <a href="">注册</a></div>
+    </div>
+</nav>
+
+<!-- content -->
+<section class="content">
+    <div class="left-part left">
+        <div class="top-left">用户注册</div>
+        <table>
+            <tr>
+                <td class="col-1"><span>*</span>用户名</td>
+                <td class="col-2"><input type="text" name="name" id="name"><span class="hint">错误信息</span></td>
+            </tr>
+            <tr>
+                <td class="col-1"><span>*</span>手机号码</td>
+                <td class="col-2"><input type="text" name="phone" id="phone"></td>
+            </tr>
+            <tr>
+                <td><span>*</span>登录密码</td>
+                <td><input type="password" name="password" id="password"></td>
+            </tr>
+            <tr>
+                <td><span>*</span>确认密码</td>
+                <td><input type="password" name="ensurePassword" id="ensurePassword"></td>
+            </tr>
+            <tr>
+                <td><span>*</span>图形验证码</td>
+                <td><input type="text" name="code" id="code"><a href=""><img src="img/temp_code.png" alt=""></a></td>
+            </tr>
+            <tr>
+                <td><span>*</span>手机验证码</td>
+                <td><input type="text" name="messageCode" id="messageCode"><a href="" class="get-code">获取验证码</a></td>
+            </tr>
+            <tr>
+                <td>邀请码</td>
+                <td><input type="text" name="inventCode" id="inventCode"></td>
+            </tr>
+            <tr>
+                <td class="last-row"></td>
+                <td class="last-row"><input type="checkbox" id="agreement" name="agreement">我同意<a class="protocol" onclick="showUserProtocol();">《贝贝投用户协议》</a></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" value="立即注册"></td>
+            </tr>
+        </table>
+    </div>
+    <span class="spt left"></span>
+    <div class="right-part left">
+        <div class="top-right">已有账号？<a href="login.html">立即登录</a></div>
+        <div class="text-wrapper">
+            <span class="top-left"></span>
+            <h1>供应链同类平台最具影响力</h1>
+            <h2>成为投资人</h2>
+            <p>通过投资理财项目<br>可轻松获得年化<br><span>9%-12%</span><br>的高收益</p>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<footer class="clearfix">
+    <div class="footer-wrapper clearfix">
+        <div class="footer-col-link">
+            <span class="footer-col-link-title">产品</span>
+            <a href="">理财须知</a>
+            <a href="">借款须知</a>
+            <a href="">理财技巧</a>
+            <a href="">利息计算器</a>
+        </div>
+        <div class="footer-col-link">
+            <span class="footer-col-link-title">公司</span>
+            <a href="">关于我们</a>
+            <a href="">加入我们</a>
+            <a href="">合作伙伴</a>
+            <a href="">媒体报道</a>
+        </div>
+        <div class="footer-col-link footer-col-link-icon">
+            <span class="footer-col-link-title">联系我们</span>
+            <a href=""><i class="fa fa-weixin" aria-hidden="true"></i>微信</a>
+            <a href=""><i class="fa fa-weibo" aria-hidden="true"></i>新浪微博</a>
+            <a href=""><i class="fa fa-phone" aria-hidden="true"></i>在线客服</a>
+            <a href=""><i class="fa fa-envelope" aria-hidden="true"></i>企业邮箱</a>
+        </div>
+        <div class="footer-col-qrcode">
+            扫码关注微信公众账号
+            <img src="img/QRcode.png" alt="">
+        </div>
+        <div class="footer-col-contact">
+            <p>请加官方一群：<a href="http://shang.qq.com/wpa/qunwpa?idkey=0e3b80cb98e2285a2cd1b9bc000e4f4725e204b679a76d59b921f76b4e933cae"><img src="img/group.png" alt=""></a></p>
+            <p>客服电话(工作时间: 8:30-17:30)</p>
+            <p class="footer-col-contact-phone">400-889-3878</p>
+            <p>座机电话: 0755-85250323</p>
+        </div>
+    </div>
+    <div class="footer-icp-number">
+        深圳贝贝投微金融服务有限公司 | 总部地址：深圳·龙华新区·民治街道民康路284号东明大厦908 | 粤ICP备14088957号-1
+    </div>
+</footer>
+
+<!-- sidebar -->
+<section class="sidebar-wrapper">
+    <a href="#" class="sidebar-top"> </a>
+    <a href=""> </a>
+    <a href=""> </a>
+    <a href=""> </a>
+    <a href=""> </a>
+</section>
+</body>
+</html>
