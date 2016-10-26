@@ -1,32 +1,102 @@
+.tab {
+  width: 1080px;
+  height: 60px;
+  margin: 30px auto;
+}
+.tab li {
+  float: left;
+  position: relative;
+}
+.tab li a {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  width: 180px;
+  height: 100%;
+  color: #666;
+  background-color: #f1f1f1;
+  line-height: 60px;
+}
+.tab li a:hover,
+.tab li a.current {
+  color: #ed5f4e;
+  background-color: #fff;
+}
+.tab .more-list {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 2;
+}
+.tab .more-list li {
+  float: none;
+}
+.tab .more-list li a {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  width: 180px;
+  height: 100%;
+  color: #666;
+  background-color: #f1f1f1;
+  line-height: 60px;
+}
+.tab .more-list li a:hover,
+.tab .more-list li a.current {
+  color: #fff;
+  background-color: #ed5f4e;
+}
+.tab li:hover > .more-list {
+  display: block;
+}
+.tab .tab-more span {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 5px solid #666;
+  position: absolute;
+  right: 55px;
+  top: 28px;
+}
+.tab .current span,
+.tab .tab-more:hover span {
+  border-top: 5px solid #ed5f4e;
+}
+.content {
+  width: 1080px;
+  margin: 0 auto 80px;
+  background-color: #fff;
+}
 .Invest {
-    width: 1080px;
-    background-color: #ffffff;
-    margin: 24px auto 30px auto;
+  width: 1080px;
+  background-color: #ffffff;
+  margin: 24px auto 30px auto;
 }
-.Invest-top{
-    padding: 42px 38px;
+.Invest-top {
+  padding: 42px 38px;
 }
-.Invest-mid{
-    padding: 6px 38px;
+.Invest-mid {
+  padding: 6px 38px;
 }
-.Invest-bottom{
-    padding: 41px 38px 45px 38px;
+.Invest-bottom {
+  padding: 41px 38px 45px 38px;
 }
-.Invest-title{
-    padding-bottom: 27px;
-    font-size: 24px;
-    text-align: left;
-    color: #ed5f4e;
-    font-family: FZLTCHK--GBK1-0, sans-serif;
+.Invest-title {
+  padding-bottom: 27px;
+  font-size: 24px;
+  text-align: left;
+  color: #ed5f4e;
+  font-weight: bold;
 }
-.Invest-content-text{
-    color: black;
-    font-size: 16px;
-    line-height: 28px;
-    font-family: FZLTHJW--GB1-0,sans-serif;
+.Invest-content-text {
+  color: black;
+  font-size: 16px;
+  line-height: 28px;
 }
-.Invest-title-bold{
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 32px;
+.Invest-title-bold {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
 }
