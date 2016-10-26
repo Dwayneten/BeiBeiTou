@@ -1,0 +1,42 @@
+.postage{
+    width: 1080px;
+    background-color: #ffffff;
+    margin: 21px auto 46px auto;
+}
+.headTable{
+    min-width: 960px;
+    min-height: 990px;
+    padding: 46px 58px;
+}
+.headTable td{
+    border: solid 1px #f1f1f1;
+    font-family: FZLTHJW--GB1-0, sans-serif;
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+}
+.headTable-top-1{
+    height: 56px;
+}
+.headTable-top-2{
+    height: 95px;
+}
+.headTable-mid-big p{
+    height: 0px;
+}
+.headTable-mid-small td {
+    width: 170px;
+    height: 33px;
+}
+td p{
+    padding-top:13px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 14px;
+    color: #666;
+    font-family: FZLTHJW--GB1-0, sans-serif;
+}
+.content-text{
+    text-align: left;
+    padding-bottom: 5px;
+}
