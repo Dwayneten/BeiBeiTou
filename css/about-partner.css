@@ -1,0 +1,86 @@
+.Partner{
+    width: 1080px;
+    height: 682px;
+    background-color: #fff;
+    margin: 21px auto 77px auto;
+}
+.Partner div{
+    margin: auto;
+}
+.Partner-title{
+    font-size: 24px;
+    text-align: left;
+    color: #666;
+    font-family: FZLTHJW--GB1-0, sans-serif;
+}
+.content-text{
+    text-align: left;
+    line-height: 28px;
+    font-size: 14px;
+    color: #666;
+    font-family: FZLTHJW--GB1-0, sans-serif;
+}
+.Partner .content-text{
+    width: 767px;
+    height: 118px;
+    float: right;
+    margin-top: 20px;
+}
+.Partner .content-text p{
+    font-size: 14px;
+    line-height: 28px;
+    font-family: FZLTHJW--GB1-0, sans-serif;
+}
+.Partner-2-title{
+    height: 67px;
+    padding-top: 30px;
+    padding-left: 59px;
+}
+.Partner-2-title p{
+    color: #666;
+}
+.law{
+    width: 960px;
+    height: 138px;
+    border-top: solid 1px #f1f1f1;
+}
+.law-img{
+    padding-top: 40px;
+    height: 58px;
+    width: 141px;
+    float: left;
+}
+.gpay{
+    width: 960px;
+    height: 138px;
+    border-top: solid 1px #f1f1f1;
+}
+.gpay-img{
+    padding-top: 40px;
+    height: 58px;
+    width: 141px;
+    float: left;
+}
+.bao{
+    width: 960px;
+    height: 138px;
+    border-top: solid 1px #f1f1f1;
+}
+.bao-img{
+    padding-top: 40px;
+    height: 58px;
+    width: 141px;
+    float: left;
+}
+.wdzj{
+    width: 960px;
+    height: 138px;
+    border-bottom: solid 1px #f1f1f1;
+    border-top: solid 1px #f1f1f1;
+}
+.wdzj-img{
+    padding-top: 40px;
+    height: 58px;
+    width: 141px;
+    float: left;
+}

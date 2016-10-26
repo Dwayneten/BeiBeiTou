@@ -1,0 +1,32 @@
+.Invest {
+    width: 1080px;
+    background-color: #ffffff;
+    margin: 24px auto 30px auto;
+}
+.Invest-top{
+    padding: 42px 38px;
+}
+.Invest-mid{
+    padding: 6px 38px;
+}
+.Invest-bottom{
+    padding: 41px 38px 45px 38px;
+}
+.Invest-title{
+    padding-bottom: 27px;
+    font-size: 24px;
+    text-align: left;
+    color: #ed5f4e;
+    font-family: FZLTCHK--GBK1-0, sans-serif;
+}
+.Invest-content-text{
+    color: black;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: FZLTHJW--GB1-0,sans-serif;
+}
+.Invest-title-bold{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+}
