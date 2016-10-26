@@ -4,20 +4,65 @@
   margin: 30px auto;
 }
 .tab li {
-  background-color: #f1f1f1;
-  color: #666;
+  float: left;
+  position: relative;
+}
+.tab li a {
+  display: block;
   font-size: 16px;
   text-align: center;
   width: 180px;
   height: 100%;
+  color: #666;
+  background-color: #f1f1f1;
   line-height: 60px;
-  float: left;
-  cursor: pointer;
 }
-.tab li:hover,
-.tab li.current {
+.tab li a:hover,
+.tab li a.current {
   color: #ed5f4e;
   background-color: #fff;
+}
+.tab .more-list {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 2;
+}
+.tab .more-list li {
+  float: none;
+}
+.tab .more-list li a {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  width: 180px;
+  height: 100%;
+  color: #666;
+  background-color: #f1f1f1;
+  line-height: 60px;
+}
+.tab .more-list li a:hover,
+.tab .more-list li a.current {
+  color: #fff;
+  background-color: #ed5f4e;
+}
+.tab li:hover > .more-list {
+  display: block;
+}
+.tab .tab-more span {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 5px solid #666;
+  position: absolute;
+  right: 55px;
+  top: 28px;
+}
+.tab .current span,
+.tab .tab-more:hover span {
+  border-top: 5px solid #ed5f4e;
 }
 .content {
   width: 1080px;
