@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>贝贝投-网贷理财,投资理财,行业领先的互联网理财平台！</title>
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="贝贝投官网,互联网理财,P2P理财,互联网金融,个人理财,投资理财,p2p网贷,网络借贷">
+    <meta name="description" content="贝贝投,是一家行业领先的互联网理财平台,互联网理财网贷理财平台,专注供应链金融,致力于为你实现财富稳健增值,互联网理财首选。">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="css/account-invest.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!-- javascript -->
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar-wrapper">
+    <div class="navbar">
+        <a href="./" class="logo-wrapper">
+            <img src="img/logo.png" alt="贝贝投" class="logo">
+        </a>
+        <ul class="nav">
+            <li><a href="./">首页</a></li>
+            <li><a href="invest.html">我要理财</a></li>
+            <li><a href="bidAction.html">我要借款</a></li>
+            <li><a href="wealthinfomation.html">信息披露</a></li>
+            <li><a href="aboutUs-info.html">关于我们</a></li>
+        </ul>
+        <div class="nav-app left"><a href=""><i class="fa fa-mobile-phone" aria-hidden="true"></i>客户端</a></div>
+        <div class="nav-user-wrapper left"><i class="fa fa-user" aria-hidden="true"></i><a href="" id="nav-login">我的账户</a></div>
+    </div>
+</nav>
+
+
+<!-- content -->
+<section class="content">
+    <div class="left-panel left">
+        <ul>
+            <li><a href="account-home.html">账户总览<span>></span></a></li>
+            <li><a href="account-infomation.html">账户设置<span>></span></a></li>
+            <li><a href="account-bank.html">我的银行卡<span>></span></a></li>
+            <li><a href="account-invest.html" class="current">我的投资<span>></span></a></li>
+            <li><a href="account-loan.html">借款管理<span>></span></a></li>
+            <li><a href="account-share.html">我的奖励<span>></span></a></li>
+            <li><a href="account-message.html">消息中心<span>></span></a></li>
+        </ul>
+    </div>
+    <div class="right-panel left">
+        <div class="row-1">
+            <div class="global-tab-wrapper">
+                <div class="left current" id="tab-1"  onclick="showTab(0);">我的理财账单</div>
+                <div class="left" id="tab-2"  onclick="showTab(1);">等待满标的理财标</div>
+                <div class="left" id="tab-3"  onclick="showTab(2);">收款中的理财标</div>
+                <div class="left" id="tab-4"  onclick="showTab(3);">已成功的理财标</div>
+            </div>
+            <div class="panel-content">
+                <div class="search-bar clearfix">
+                    <select name="" id="" class="left">
+                        <option value="0" selected="">-- 请选择 --</option>
+                    </select>
+                    <select name="" id="" class="left">
+                        <option value="0" selected="">-- 请选择 --</option>
+                    </select>
+                    <select name="" id="" class="left">
+                        <option value="0" selected="">-- 请选择 --</option>
+                    </select>
+                    <input type="text" class="left">
+                    <a href="" class="left global-button-a">搜索</a>
+                </div>
+                <table>
+                    <tr>
+                        <th>序号</th>
+                        <th>账单标题</th>
+                        <th>本期应收金额</th>
+                        <th>是否逾期</th>
+                        <th>状态</th>
+                        <th>到期还款时间</th>
+                        <th>实际还款时间</th>
+                        <th>操作</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<footer class="clearfix">
+    <div class="footer-wrapper clearfix">
+        <div class="footer-col-link">
+            <span class="footer-col-link-title">产品</span>
+            <a href="">理财须知</a>
+            <a href="">借款须知</a>
+            <a href="">理财技巧</a>
+            <a href="">利息计算器</a>
+        </div>
+        <div class="footer-col-link">
+            <span class="footer-col-link-title">公司</span>
+            <a href="">关于我们</a>
+            <a href="">加入我们</a>
+            <a href="">合作伙伴</a>
+            <a href="">媒体报道</a>
+        </div>
+        <div class="footer-col-link footer-col-link-icon">
+            <span class="footer-col-link-title">联系我们</span>
+            <a href=""><i class="fa fa-weixin" aria-hidden="true"></i>微信</a>
+            <a href=""><i class="fa fa-weibo" aria-hidden="true"></i>新浪微博</a>
+            <a href=""><i class="fa fa-phone" aria-hidden="true"></i>在线客服</a>
+            <a href=""><i class="fa fa-envelope" aria-hidden="true"></i>企业邮箱</a>
+        </div>
+        <div class="footer-col-qrcode">
+            扫码关注微信公众账号
+            <img src="img/QRcode.png" alt="">
+        </div>
+        <div class="footer-col-contact">
+            <p>请加官方一群：<a href="http://shang.qq.com/wpa/qunwpa?idkey=0e3b80cb98e2285a2cd1b9bc000e4f4725e204b679a76d59b921f76b4e933cae"><img src="img/group.png" alt=""></a></p>
+            <p>客服电话(工作时间: 8:30-17:30)</p>
+            <p class="footer-col-contact-phone">400-889-3878</p>
+            <p>座机电话: 0755-85250323</p>
+        </div>
+    </div>
+    <div class="footer-icp-number">
+        深圳贝贝投微金融服务有限公司 | 总部地址：深圳·龙华新区·民治街道民康路284号东明大厦908 | 粤ICP备14088957号-1
+    </div>
+</footer>
+
+<!-- sidebar -->
+<section class="sidebar-wrapper">
+    <a href="#" class="sidebar-top"> </a>
+    <a href=""> </a>
+    <a href=""> </a>
+    <a href=""> </a>
+    <a href=""> </a>
+</section>
+</body>
+</html>
