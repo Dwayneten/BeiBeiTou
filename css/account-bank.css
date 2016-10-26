@@ -91,66 +91,22 @@ select {
   height: 40px;
   width: 175px;
 }
-.row-1 .global-panel-big-title {
+.row-1 .sina-pay {
+  margin: 30px 0;
+}
+.row-1 .empty-cell {
+  width: 300px;
+  height: 165px;
+  border: 1px dotted #e1e1e1;
   position: relative;
+  display: inline-block;
+  color: #999;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 100px;
 }
-.row-1 .global-panel-big-title .top-right {
+.row-1 .empty-cell .plus-icon {
   position: absolute;
-  top: 0;
-  right: 5px;
-  font-size: 24px;
-  color: #333;
-}
-.row-1 .global-panel-big-title .top-right span {
-  color: #ed5f4e;
-}
-.row-1 table {
-  border-collapse: collapse;
-}
-.row-1 table tr {
-  height: 80px;
-  border-bottom: 1px solid #e1e1e1;
-}
-.row-1 td {
-  height: 80px;
-  font-size: 16px;
-  color: #666;
-}
-.row-1 td:nth-child(1) {
-  width: 110px;
-  color: #000;
-  padding-left: 10px;
-}
-.row-1 td:nth-child(2) {
-  width: 350px;
-}
-.row-1 td:nth-child(3) {
-  width: 160px;
-}
-.row-1 td:nth-child(4) {
-  width: 110px;
-}
-.row-1 td:nth-child(5) {
-  text-align: right;
-  padding-right: 10px;
-}
-.row-1 td:nth-child(5) a {
-  color: #218ce5;
-}
-.row-1 .bound,
-.row-1 .set {
-  color: #63b97c;
-}
-.row-2 td {
-  padding: 30px 20px 0 0;
-  color: #000;
-}
-.row-2 td span {
-  color: #ed5f4e;
-  margin-right: 5px;
-}
-.row-2 .save {
-  width: 175px;
-  height: 40px;
-  line-height: 40px;
+  left: 120px;
+  top: 40px;
 }
