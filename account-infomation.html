@@ -8,7 +8,7 @@
     <meta name="description" content="贝贝投,是一家行业领先的互联网理财平台,互联网理财网贷理财平台,专注供应链金融,致力于为你实现财富稳健增值,互联网理财首选。">
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
-    <link rel="stylesheet" type="text/css" href="css/account-home.min.css">
+    <link rel="stylesheet" type="text/css" href="css/account-infomation.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <!-- javascript -->
     <script type="text/javascript" src="js/main.js"></script>
@@ -37,8 +37,8 @@
 <section class="content">
     <div class="left-panel left">
         <ul>
-            <li><a href="account-home.html" class="current">账户总览<span>></span></a></li>
-            <li><a href="account-infomation.html">账户设置<span>></span></a></li>
+            <li><a href="account-home.html">账户总览<span>></span></a></li>
+            <li><a href="account-infomation.html" class="current">账户设置<span>></span></a></li>
             <li><a href="account-bank.html">我的银行卡<span>></span></a></li>
             <li><a href="account-invest.html">我的投资<span>></span></a></li>
             <li><a href="account-loan.html">借款管理<span>></span></a></li>
@@ -48,51 +48,99 @@
     </div>
     <div class="right-panel left">
         <div class="row-1">
-            <a href="" class="portrait"><img src="img/portrait.png" alt=""></a>
-            <div class="bind">
-                <p>您好 <span>viggo</span>!</p>
-                <a href="" class="active"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                <a href="" class="active"><i class="fa fa-mobile-phone" aria-hidden="true"></i></a>
-                <a href="" class="active"><i class="fa fa-credit-card" aria-hidden="true"></i></a>
-                <a href="" class=""><i class="fa fa-lock" aria-hidden="true"></i></a>
+            <div class="title">
+                安全中心
+                <div class="top-right">您的安全等级：<span>低</span></div>
             </div>
-            <span class="spt"></span>
-            <div class="left data">
-                <p>信用额度：<span>0.00</span>元</p>
-                <p>注册时间：<span>2016-07-24</span></p>
-                <p>信用积分：<span>0</span>分</p>
-            </div>
-            <div class="left data">
-                <p><span>1</span>条投标记录</p>
-                <p><span>0</span>条借款记录</p>
-                <p><span>0</span>条债权转让记录</p>
-            </div>
+            <table class="clearfix">
+                <tr>
+                    <td>实名认证</td>
+                    <td>完成实名认证，账户更安全理财更放心</td>
+                    <td>--</td>
+                    <td>未认证</td>
+                    <td><a href="">立即认证</a></td>
+                </tr>
+                <tr>
+                    <td>绑定手机</td>
+                    <td>完成实名认证，账户更安全理财更放心</td>
+                    <td>15800184853</td>
+                    <td class="bound">已绑定</td>
+                    <td><a href="">修改</a></td>
+                </tr>
+                <tr>
+                    <td>绑定邮箱</td>
+                    <td>及时获取账户资金变动通知和投资讯息</td>
+                    <td>--</td>
+                    <td>未绑定</td>
+                    <td><a href="">立即绑定</a></td>
+                </tr>
+                <tr>
+                    <td>登录密码</td>
+                    <td>保障账户安全</td>
+                    <td>--</td>
+                    <td class="set">已设置</td>
+                    <td><a href="">修改</a></td>
+                </tr>
+                <tr>
+                    <td>支付密码</td>
+                    <td>保障用户资产安全</td>
+                    <td>--</td>
+                    <td>未设置</td>
+                    <td><a href="">立即设置</a></td>
+                </tr>
+            </table>
         </div>
-        <div class="row-2-col-1 left">
-            <p>账户可用余额：<span>7.50元</span></p>
-            <a href="" class="global-button-a">充值</a><a href="" class="global-button-a">提现</a>
-        </div>
-        <div class="row-2-col-2 left">
-            <p>新浪托管余额：<span>7.50元</span></p>
-            <a href="" class="global-button-a">前往新浪支付个人中心</a>
-        </div>
-        <div class="row-3-col-1 left">
-            <div class="global-panel-title">资产总额</div>
-            <div class="panel-content">
-                <p>可用资金<span>7.50元</span></p>
-                <p>冻结资金<span>0.00元</span></p>
-                <p>待收总额<span>0.00元</span></p>
-                <p>待收本金<span>0.00元</span></p>
-                <p>待收利息<span>0.00元</span></p>
-            </div>
-        </div>
-        <div class="row-3-col-2 left">
-            <div class="global-panel-title">负债总额</div>
-            <div class="panel-content">
-                <p>待还总额<span>0.00元</span></p>
-                <p>待还本金<span>0.00元</span></p>
-                <p>待还利息<span>0.00元</span></p>
-            </div>
+        <div class="row-2">
+            <div class="title">资料设置</div>
+            <table>
+                <tr>
+                    <td><span>*</span>户口所在地</td>
+                    <td><select name="province" id="province">
+                        <option value="0" selected="">-- 请选择 --</option>
+                    </select></td>
+                    <td><select name="city" id="city">
+                        <option value="0" selected="">-- 请选择 --</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><span>*</span>性别</td>
+                    <td><select name="sex" id="sex">
+                        <option value="0" selected="">-- 请选择 --</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><span>*</span>年龄</td>
+                    <td><input type="text" id="age"></td>
+                </tr>
+                <tr>
+                    <td><span>*</span>文化程度</td>
+                    <td><select name="" id="educate">
+                        <option value="0" selected="">-- 请选择 --</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><span>*</span>婚姻情况</td>
+                    <td><select name="" id="marriage">
+                        <option value="0" selected="">-- 请选择 --</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><span>*</span>购车情况</td>
+                    <td><select name="" id="car">
+                        <option value="0" selected="">-- 请选择 --</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><span>*</span>购房情况</td>
+                    <td><select name="" id="house">
+                        <option value="0" selected="">-- 请选择 --</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href="" class="global-button-a save">保存</a></td>
+                </tr>
+            </table>
         </div>
     </div>
 </section>
