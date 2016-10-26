@@ -45,6 +45,12 @@
   width: 430px;
   height: 150px;
 }
+.table-wrapper .table-col-1 a {
+  color: #333;
+}
+.table-wrapper .table-col-1 a:hover {
+  color: #ed5f4e;
+}
 .table-wrapper .title-lianbiao,
 .table-wrapper .title-yuebiao {
   display: block;
