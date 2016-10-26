@@ -43,6 +43,7 @@
 }
 .global-button-a {
   background-color: #ed5f4e;
+  border: 1px solid #ed5f4e;
   color: #fff;
   text-align: center;
   display: block;
