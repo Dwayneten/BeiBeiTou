@@ -1,0 +1,53 @@
+@import "about.less";
+
+// content
+.content {
+  padding: 20px 35px;
+}
+.title {
+  font-size: 24px;
+  margin: 24px 0;
+  color: @theme-red;
+  font-weight: bold;
+}
+.news-wrapper {
+  width: 100%;
+  min-height: 215px;
+  border-top: 1px solid #e1e1e1;
+  img {
+    width: 130px;
+    height: 130px;
+    display: block;
+    float: left;
+    margin-top: 35px;
+    margin-right: 30px;
+  }
+  .right-part {
+    display: block;
+    float: left;
+    width: 850px;
+    height: 100%;
+    padding: 35px 0 50px;
+    position: relative;
+    h1 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 18px;
+      color: #666;
+    }
+    .top-right {
+      position: absolute;
+      top: 35px;
+      right: 0;
+      p {
+        color: #999;
+        &+p {
+          margin-left: 50px;
+        }
+      }
+    }
+  }
+}

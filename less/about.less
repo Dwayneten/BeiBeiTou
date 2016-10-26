@@ -6,26 +6,68 @@
   height: 60px;
   margin: 30px auto;
   li {
-    background-color: #f1f1f1;
-    color: #666;
-    font-size: 16px;
-    text-align: center;
-    width: 180px;
-    height: 100%;
-    line-height: 60px;
     float: left;
-    cursor: pointer;
-    &:hover, &.current {
-      color: @theme-red;
-      background-color: #fff;
+    position: relative;
+    a {
+      display: block;
+      font-size: 16px;
+      text-align: center;
+      width: 180px;
+      height: 100%;
+      color: #666;
+      background-color: #f1f1f1;
+      line-height: 60px;
+      &:hover, &.current {
+        color: @theme-red;
+        background-color: #fff;
+      }
     }
+  }
+  .more-list {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 2;
+    li {
+      float: none;
+      a {
+        display: block;
+        font-size: 16px;
+        text-align: center;
+        width: 180px;
+        height: 100%;
+        color: #666;
+        background-color: #f1f1f1;
+        line-height: 60px;
+        &:hover, &.current {
+          color: #fff;
+          background-color: @theme-red;
+        }
+      }
+    }
+  }
+  li:hover > .more-list {
+    display: block;
+  }
+  .tab-more span {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 5px solid #666;
+    position: absolute;
+    right: 55px;
+    top: 28px;
+  }
+  .current span, .tab-more:hover span {
+    border-top: 5px solid @theme-red;
   }
 }
 
 // content section
 .content {
   width: 1080px;
-  min-height: 1400px;
   margin: 0 auto 80px;
   background-color: #fff;
 }
