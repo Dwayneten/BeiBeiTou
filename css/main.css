@@ -96,6 +96,12 @@ nav {
   line-height: 76px;
   margin: 0 30px;
 }
+.nav-app i {
+  font-size: 28px;
+  vertical-align: -5px;
+  margin-right: 5px;
+  width: 12px;
+}
 .nav-user-wrapper {
   background-color: #ed5f4e;
   border-radius: 16px;
@@ -107,13 +113,15 @@ nav {
   color: #fff;
   font-weight: 700;
 }
+.nav-user-wrapper i {
+  width: 12px;
+}
 .nav-user-wrapper a {
   color: #fff;
   line-height: 32px;
 }
 #nav-login {
   padding-left: 5px;
-  background-image: url("../img/member.jpg");
 }
 footer {
   width: 100%;
@@ -144,8 +152,9 @@ footer {
   display: block;
   margin-bottom: 30px;
 }
-.footer-col-link-icon a {
-  padding-left: 26px;
+.footer-col-link-icon i {
+  margin-right: 10px;
+  width: 16px;
 }
 .footer-col-qrcode {
   font-size: 16px;
