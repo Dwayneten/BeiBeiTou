@@ -69,34 +69,70 @@
   margin: 0 auto 80px;
   background-color: #fff;
 }
-.Invest {
+.content {
   width: 1080px;
-  background-color: #ffffff;
-  margin: 24px auto 30px auto;
+  margin: 0 auto 41px;
+  background-color: #fff;
+  padding: 18px 50px 42px;
 }
-.Invest-top {
-  padding: 42px 50px;
-}
-.Invest-mid {
-  padding: 6px 50px;
-}
-.Invest-bottom {
-  padding: 41px 50px 45px;
-}
-.Invest-title {
-  padding-bottom: 27px;
+.title {
   font-size: 24px;
+  color: #333;
+  text-align: left;
+  margin: 21px auto;
+  margin-bottom: 55px;
+}
+.title-content {
+  margin-top: -57px;
+  font-size: 16px;
+  text-align: left;
+  line-height: 34px;
+  color: #333;
+  border-bottom: solid 1px #eaeaea;
+}
+.contact-wrapper {
+  margin-top: 48px;
+}
+.contact-wrapper h1 {
+  font-size: 20px;
   text-align: left;
   color: #ed5f4e;
-  font-weight: bold;
+  margin-top: 33px;
+  margin-bottom: 18px;
 }
-.Invest-content-text {
-  color: black;
+.contact-wrapper p {
   font-size: 16px;
-  line-height: 28px;
+  color: #000;
+  text-align: left;
+  line-height: 30px;
 }
-.Invest-title-bold {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 32px;
+.sp {
+  color: #ed5f4e;
+}
+.sp-big {
+  font-size: 20px;
+}
+.way {
+  float: left;
+  width: 1080px;
+}
+.way-bottom {
+  float: left;
+  width: 1080px;
+  margin-bottom: 26px;
+}
+.left-part {
+  float: left;
+}
+.right-part {
+  margin-left: 110px;
+  float: left;
+}
+.right-part-2 {
+  margin-left: 63px;
+  float: left;
+}
+.right-part-3 {
+  margin-left: 119px;
+  float: left;
 }
