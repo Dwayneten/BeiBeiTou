@@ -8,7 +8,59 @@
 }
 
 .panel-content {
-  padding: 50px 25px 30px 30px;
+  padding: 30px 25px 30px 30px;
+  display: none;
+  &.current {
+    display: block;
+  }
+  span {
+    color: @theme-red;
+    margin: 0 10px;
+  }
+  p {
+    color: #333;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 10px 0 30px 0;
+  }
+}
+.search-bar, .add-bar {
+  margin-bottom: 35px;
+  input, select {
+    width: 140px;
+    margin-right: 20px;
+  }
+  .global-button-a {
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+.add-bar {
+  margin-top: 30px;
+}
+.table-wrapper {
+  border-top: 1px solid #e1e1e1;
+  padding-top: 10px;
+  .title {
+    font-size: 18px;
+    color: @theme-red;
+    margin-bottom: 10px;
+  }
+  table {
+    width: 100%;
+  }
+  tr:nth-child(odd) {
+    background-color: #fafafa;
+  }
+  td:nth-child(evem) {
+    color: #999;
+  }
+  td, th {
+    font-weight: normal;
+    text-align: center;
+    height: 45px;
+  }
 }
 
 .row-1 {
