@@ -164,3 +164,6 @@ select {
   text-align: center;
   height: 60px;
 }
+.row-1 td a {
+  color: #218ce5;
+}
