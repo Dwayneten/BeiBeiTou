@@ -7,11 +7,23 @@
     <meta name="keywords" content="贝贝投官网,互联网理财,P2P理财,互联网金融,个人理财,投资理财,p2p网贷,网络借贷">
     <meta name="description" content="贝贝投,是一家行业领先的互联网理财平台,互联网理财网贷理财平台,专注供应链金融,致力于为你实现财富稳健增值,互联网理财首选。">
     <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/unslider.css">
+    <link rel="stylesheet" type="text/css" href="css/unslider-dots.css">
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <!-- javascript -->
+    <script type="text/javascript" src="js/jquery-3.1.min.js"></script>
+    <script type="text/javascript" src="js/unslider-min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.banner-wrapper').unslider({
+                arrows: false,
+                autoplay: true
+            });
+        });
+    </script>
 </head>
 <body>
     <!-- navbar -->
@@ -34,7 +46,11 @@
 
     <!-- banner -->
     <section class="banner-wrapper">
-        <img src="img/banner.png" alt="" class="banner-img">
+        <ul>
+            <li><img src="img/banner.png" alt="" class="banner-img"></li>
+            <li><img src="img/banner.png" alt="" class="banner-img"></li>
+            <li><img src="img/banner.png" alt="" class="banner-img"></li>
+        </ul>
     </section>
 
     <!-- count -->
