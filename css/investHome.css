@@ -182,14 +182,15 @@
   background-color: #fff;
   color: #000;
 }
-.info-content {
-  padding: 30px 50px 40px;
-}
-#content-info,
-#content-record,
-#content-comment {
+.content-wrapper {
   display: none;
   overflow: hidden;
+}
+.content-wrapper.current {
+  display: block;
+}
+.info-content {
+  padding: 30px 50px 40px;
 }
 #content-chain {
   line-height: 28px;

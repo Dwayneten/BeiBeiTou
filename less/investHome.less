@@ -191,12 +191,15 @@
     }
   }
 }
-.info-content {
-  padding: 30px 50px 40px;
-}
-#content-info, #content-record, #content-comment {
+.content-wrapper {
   display: none;
   overflow: hidden;
+  &.current {
+    display: block;
+  }
+}
+.info-content {
+  padding: 30px 50px 40px;
 }
 
 // tab 1
