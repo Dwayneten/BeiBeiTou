@@ -21,6 +21,12 @@ a {
     color: @theme-red;
   }
 }
+input[type="text"], input[type="password"], select, textarea {
+  outline: none;
+  &:focus {
+    border: 1px solid #218ce5 !important;
+  }
+}
 
 a, p, h1, h2, h3, h4, h5, h6, ul, li, ol, dl, div {
   font-family: @font-global;
