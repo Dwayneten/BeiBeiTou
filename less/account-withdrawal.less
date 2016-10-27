@@ -1,0 +1,81 @@
+@import "account.less";
+
+.row-1{
+  .sina-pay {
+    margin: 30px 0;
+  }
+  .col-1 {
+    width: 120px;
+  }
+  .col-2 {
+    color: #333;
+  }
+  td {
+    height: 50px;
+    color: #999;
+  }
+  .red {
+    color: @theme-red;
+    font-size: 24px;
+  }
+  .add-card {
+    width: 140px;
+    height: 40px;
+    line-height: 32px;
+    font-size: 40px;
+    border: 1px solid #e1e1e1;
+    margin-left: 20px;
+    display: block;
+    text-align: center;
+    color: #999;
+    &:hover {
+      border-color: @theme-red;
+      color: @theme-red;
+    }
+  }
+  input, select {
+    height: 40px;
+    width: 140px;
+  }
+  .hint {
+    color: @theme-red;
+    font-size: 14px;
+    margin-left: 20px;
+  }
+}
+
+.row-2 {
+  table {
+    border-collapse: collapse;
+    empty-cells: show;
+    width: 100%;
+    margin: 30px 0 20px;
+  }
+  td {
+    border: 1px solid #e1e1e1;
+    color: #999;
+    height: 55px;
+    text-align: center;
+  }
+  tr:nth-child(odd) {
+    background-color: #fafafa;
+  }
+  th {
+    border: 1px solid #e1e1e1;
+    font-weight: normal;
+    color: #333;
+    height: 45px;
+  }
+  p {
+    color: #333;
+  }
+  a {
+    color: #218ce5;
+  }
+}
+
+.global-button-a {
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+}
