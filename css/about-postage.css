@@ -92,7 +92,7 @@
   height: 95px;
 }
 .headTable-mid-big p {
-  height: 0px;
+  height: 0;
 }
 .headTable-mid-small td {
   width: 170px;
