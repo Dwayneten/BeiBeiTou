@@ -49,15 +49,15 @@
     <div class="right-panel left">
         <div class="row-1">
             <div class="global-tab-wrapper">
-                <div class="left current" id="tab-1"  onclick="showTab(0);">我的借款账单</div>
-                <div class="left" id="tab-2"  onclick="showTab(1);">审核中的标</div>
-                <div class="left" id="tab-3"  onclick="showTab(2);">筹款中的标</div>
-                <div class="left" id="tab-4"  onclick="showTab(3);">待放款的标</div>
-                <div class="left" id="tab-5"  onclick="showTab(4);">还款中的标</div>
-                <div class="left" id="tab-6"  onclick="showTab(5);">已还款的标</div>
-                <div class="left" id="tab-7"  onclick="showTab(6);">已流标</div>
+                <div class="left current" id="tab-1"  onclick="showTab('panel-content', 0);">我的借款账单</div>
+                <div class="left" id="tab-2"  onclick="showTab('panel-content', 1);">审核中的标</div>
+                <div class="left" id="tab-3"  onclick="showTab('panel-content', 2);">筹款中的标</div>
+                <div class="left" id="tab-4"  onclick="showTab('panel-content', 3);">待放款的标</div>
+                <div class="left" id="tab-5"  onclick="showTab('panel-content', 4);">还款中的标</div>
+                <div class="left" id="tab-6"  onclick="showTab('panel-content', 5);">已还款的标</div>
+                <div class="left" id="tab-7"  onclick="showTab('panel-content', 6);">已流标</div>
             </div>
-            <div class="panel-content">
+            <div class="panel-content current">
                 <div class="search-bar clearfix">
                     <select name="" id="" class="left">
                         <option value="0" selected="">-- 请选择 --</option>
@@ -114,6 +114,312 @@
                     </tr>
                 </table>
                 <a href="" class="global-button-a">下载数据</a>
+            </div>
+            <div class="panel-content">
+                <div class="search-bar clearfix">
+                    <select name="" id="" class="left">
+                        <option value="0" selected="">-- 请选择 --</option>
+                    </select>
+                    <input type="text" class="left">
+                    <a href="" class="left global-button-a">搜索</a>
+                </div>
+                <table>
+                    <tr>
+                        <th>序号</th>
+                        <th>借款标编号</th>
+                        <th>借款标标题</th>
+                        <th>借款人</th>
+                        <th>借款金额</th>
+                        <th>年利率</th>
+                        <th>操作项</th>
+                        <th>借款合同</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>J215</td>
+                        <td>暑期清凉送活动</td>
+                        <td>体验标</td>
+                        <td>50,000.00</td>
+                        <td>9.0%</td>
+                        <td><a href="">详情</a> | <a href="">账单</a></td>
+                        <td><a href="">查看合同</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="panel-content">
+                <div class="search-bar clearfix">
+                    <select name="" id="" class="left">
+                        <option value="0" selected="">-- 请选择 --</option>
+                    </select>
+                    <input type="text" class="left">
+                    <a href="" class="left global-button-a">搜索</a>
+                </div>
+                <table>
+                    <tr>
+                        <th>序号</th>
+                        <th>借款标编号</th>
+                        <th>借款标标题</th>
+                        <th>借款人</th>
+                        <th>借款金额</th>
+                        <th>年利率</th>
+                        <th>操作项</th>
+                        <th>借款合同</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>J215</td>
+                        <td>暑期清凉送活动</td>
+                        <td>体验标</td>
+                        <td>50,000.00</td>
+                        <td>9.0%</td>
+                        <td><a href="">详情</a> | <a href="">账单</a></td>
+                        <td><a href="">查看合同</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="panel-content">
+                <div class="search-bar clearfix">
+                    <select name="" id="" class="left">
+                        <option value="0" selected="">-- 请选择 --</option>
+                    </select>
+                    <input type="text" class="left">
+                    <a href="" class="left global-button-a">搜索</a>
+                </div>
+                <table>
+                    <tr>
+                        <th>序号</th>
+                        <th>借款标编号</th>
+                        <th>借款标标题</th>
+                        <th>借款人</th>
+                        <th>借款金额</th>
+                        <th>年利率</th>
+                        <th>操作项</th>
+                        <th>借款合同</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>J215</td>
+                        <td>暑期清凉送活动</td>
+                        <td>体验标</td>
+                        <td>50,000.00</td>
+                        <td>9.0%</td>
+                        <td><a href="">详情</a> | <a href="">账单</a></td>
+                        <td><a href="">查看合同</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="panel-content">
+                <div class="search-bar clearfix">
+                    <select name="" id="" class="left">
+                        <option value="0" selected="">-- 请选择 --</option>
+                    </select>
+                    <input type="text" class="left">
+                    <a href="" class="left global-button-a">搜索</a>
+                </div>
+                <table>
+                    <tr>
+                        <th>序号</th>
+                        <th>借款标编号</th>
+                        <th>借款标标题</th>
+                        <th>借款人</th>
+                        <th>借款金额</th>
+                        <th>年利率</th>
+                        <th>操作项</th>
+                        <th>借款合同</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>J215</td>
+                        <td>暑期清凉送活动</td>
+                        <td>体验标</td>
+                        <td>50,000.00</td>
+                        <td>9.0%</td>
+                        <td><a href="">详情</a> | <a href="">账单</a></td>
+                        <td><a href="">查看合同</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="panel-content">
+                <div class="search-bar clearfix">
+                    <select name="" id="" class="left">
+                        <option value="0" selected="">-- 请选择 --</option>
+                    </select>
+                    <input type="text" class="left">
+                    <a href="" class="left global-button-a">搜索</a>
+                </div>
+                <table>
+                    <tr>
+                        <th>序号</th>
+                        <th>借款标编号</th>
+                        <th>借款标标题</th>
+                        <th>借款人</th>
+                        <th>借款金额</th>
+                        <th>年利率</th>
+                        <th>操作项</th>
+                        <th>借款合同</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>J215</td>
+                        <td>暑期清凉送活动</td>
+                        <td>体验标</td>
+                        <td>50,000.00</td>
+                        <td>9.0%</td>
+                        <td><a href="">详情</a> | <a href="">账单</a></td>
+                        <td><a href="">查看合同</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="panel-content">
+                <div class="search-bar clearfix">
+                    <select name="" id="" class="left">
+                        <option value="0" selected="">-- 请选择 --</option>
+                    </select>
+                    <input type="text" class="left">
+                    <a href="" class="left global-button-a">搜索</a>
+                </div>
+                <table>
+                    <tr>
+                        <th>序号</th>
+                        <th>借款标编号</th>
+                        <th>借款标标题</th>
+                        <th>借款人</th>
+                        <th>借款金额</th>
+                        <th>年利率</th>
+                        <th>操作项</th>
+                        <th>借款合同</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>J215</td>
+                        <td>暑期清凉送活动</td>
+                        <td>体验标</td>
+                        <td>50,000.00</td>
+                        <td>9.0%</td>
+                        <td><a href="">详情</a> | <a href="">账单</a></td>
+                        <td><a href="">查看合同</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
