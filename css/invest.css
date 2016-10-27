@@ -32,8 +32,12 @@
   background-color: #fff;
 }
 .table-wrapper {
-  min-height: 1000px;
+  min-height: 100px;
   padding: 10px 50px 50px;
+  display: none;
+}
+.table-wrapper.current {
+  display: block;
 }
 .table-wrapper tr {
   width: 100%;
