@@ -142,8 +142,7 @@
 .data-table-col-1 {
   width: 360px;
   font-size: 16px;
-  font-weight: bold;
-  color: #666;
+  color: #333;
   text-align: left;
 }
 .data-table-col-2,
@@ -153,7 +152,7 @@
 .data-table-col-6 {
   width: 130px;
   text-align: center;
-  color: #666;
+  color: #333;
 }
 .data-table-col-2 {
   font-size: 24px;
@@ -233,7 +232,6 @@
   text-align: right;
   color: #218ce5;
   font-size: 16px;
-  font-weight: bold;
 }
 .news-list {
   width: 100%;

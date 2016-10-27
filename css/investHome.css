@@ -152,10 +152,20 @@
   font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 .data-wrapper input[type="button"] {
+  border: 1px solid #ed5f4e;
   background-color: #ed5f4e;
   color: #fff;
   text-align: center;
-  border: none;
+  font-size: 16px;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  line-height: 40px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.data-wrapper input[type="button"]:hover {
+  border: 1px solid #ed5f4e;
+  background-color: #fff;
+  color: #ed5f4e;
 }
 .info-wrapper {
   width: 1080px;
