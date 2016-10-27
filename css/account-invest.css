@@ -122,6 +122,10 @@ select {
 }
 .row-1 .panel-content {
   padding: 30px 45px 30px 60px;
+  display: none;
+}
+.row-1 .panel-content.current {
+  display: block;
 }
 .search-bar {
   margin-bottom: 35px;

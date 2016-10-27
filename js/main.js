@@ -1,28 +1,21 @@
-function $(id) {
-    return document.getElementById(id);
-}
+function showTab(contentClassName, index) {
+    // switch tab
+    if (event.target.classList.contains('current'))
+        return false;
+    var targetParentNode = event.target.parentNode;
+    for (var curNode = targetParentNode.firstElementChild; curNode; curNode = curNode.nextElementSibling) {
+        if (curNode.classList.contains('current'))
+            curNode.classList.remove('current');
+    }
+    event.target.classList.add('current');
 
-function showYuebiao() {
-    var lianbiao = $('data-table-lianbiao'),
-        yuebiao = $('data-table-yuebiao'),
-        lianbiaoTab = $('data-tab-lianbiao'),
-        yuebiaoTab = $('data-tab-yuebiao');
+    // switch content
+    var content = document.getElementsByClassName(contentClassName);
+    for (var i = 0; i<content.length; ++i) {
+        if (content[i].classList.contains('current'))
+            content[i].classList.remove('current');
+    }
+    content[index].classList.add('current');
 
-    lianbiao.style.display = 'none';
-    yuebiao.style.display = 'block';
-    lianbiaoTab.classList.remove('data-current-tab');
-    yuebiaoTab.classList.add('data-current-tab');
-    return false;
-}
-function showLianbiao() {
-    var lianbiao = $('data-table-lianbiao'),
-        yuebiao = $('data-table-yuebiao'),
-        lianbiaoTab = $('data-tab-lianbiao'),
-        yuebiaoTab = $('data-tab-yuebiao');
-
-    lianbiao.style.display = 'block';
-    yuebiao.style.display = 'none';
-    lianbiaoTab.classList.add('data-current-tab');
-    yuebiaoTab.classList.remove('data-current-tab');
     return false;
 }
