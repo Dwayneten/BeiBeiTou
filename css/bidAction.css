@@ -99,6 +99,7 @@
 }
 .form-wrapper .button-panel a {
   transition: 0.2s;
+  color: #ed5f4e;
 }
 .form-wrapper .button-panel input[type="checkbox"] {
   margin-right: 10px;

@@ -142,8 +142,7 @@
 .data-table-col-1 {
   width: 360px;
   font-size: 16px;
-  font-weight: bold;
-  color: #666;
+  color: #333;
   text-align: left;
 }
 .data-table-col-2,
@@ -153,7 +152,7 @@
 .data-table-col-6 {
   width: 130px;
   text-align: center;
-  color: #666;
+  color: #333;
 }
 .data-table-col-2 {
   font-size: 24px;
@@ -176,11 +175,10 @@
 }
 .data-table-col-6 a,
 .data-table-col-6 span {
-  border-radius: 5px;
   display: block;
-  height: 38px;
-  width: 129px;
-  line-height: 38px;
+  height: 40px;
+  width: 130px;
+  line-height: 40px;
   color: #fff;
 }
 .data-table-col-6 a {
@@ -233,7 +231,6 @@
   text-align: right;
   color: #218ce5;
   font-size: 16px;
-  font-weight: bold;
 }
 .news-list {
   width: 100%;
