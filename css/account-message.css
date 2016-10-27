@@ -126,6 +126,34 @@ select {
 .global-panel-big-title .top-right a i {
   margin-right: 10px;
 }
+.panel-content {
+  width: 100%;
+  min-height: 300px;
+  position: relative;
+  padding: 0 0 50px 0;
+}
+.panel-content .title {
+  display: block;
+  width: 500px;
+  margin: 20px auto 30px;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
+.panel-content .text {
+  color: #999;
+  width: 800px;
+  margin: 0 auto;
+  text-indent: 2em;
+  line-height: 28px;
+}
+.panel-content .bottom-right {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #218ce5;
+  font-size: 18px;
+}
 .message-box {
   display: block;
   border-bottom: 1px solid #e1e1e1;
