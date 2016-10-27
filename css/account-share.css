@@ -117,7 +117,58 @@ select {
   font-size: 18px;
 }
 .panel-content {
-  padding: 50px 25px 30px 30px;
+  padding: 30px 25px 30px 30px;
+  display: none;
+}
+.panel-content.current {
+  display: block;
+}
+.panel-content span {
+  color: #ed5f4e;
+  margin: 0 10px;
+}
+.panel-content p {
+  color: #333;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 10px 0 30px 0;
+}
+.search-bar {
+  margin-bottom: 35px;
+}
+.search-bar input,
+.search-bar select {
+  width: 140px;
+  margin-right: 20px;
+}
+.search-bar .global-button-a {
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+}
+.table-wrapper {
+  border-top: 1px solid #e1e1e1;
+  padding-top: 10px;
+}
+.table-wrapper .title {
+  font-size: 18px;
+  color: #ed5f4e;
+  margin-bottom: 10px;
+}
+.table-wrapper table {
+  width: 100%;
+}
+.table-wrapper tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+.table-wrapper td:nth-child(evem) {
+  color: #999;
+}
+.table-wrapper td,
+.table-wrapper th {
+  font-weight: normal;
+  text-align: center;
+  height: 45px;
 }
 .row-1 {
   background-color: #fff;

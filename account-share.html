@@ -49,12 +49,12 @@
     <div class="right-panel left">
         <div class="row-1">
             <div class="global-tab-wrapper">
-                <div class="left current" id="tab-1"  onclick="showTab(0);">我的推广链接</div>
-                <div class="left" id="tab-2"  onclick="showTab(1);">我成功推广的成员</div>
-                <div class="left" id="tab-3"  onclick="showTab(2);">我的推广收入</div>
-                <div class="left" id="tab-4"  onclick="showTab(3);">添加推荐人</div>
+                <div class="left current" id="tab-1"  onclick="showTab('panel-content', 0);">我的推广链接</div>
+                <div class="left" id="tab-2"  onclick="showTab('panel-content', 1);">我成功推广的成员</div>
+                <div class="left" id="tab-3"  onclick="showTab('panel-content', 2);">我的推广收入</div>
+                <div class="left" id="tab-4"  onclick="showTab('panel-content', 3);">添加推荐人</div>
             </div>
-            <div class="panel-content">
+            <div class="panel-content current">
                 <div class="clearfix">
                     <div class="left-part left">
                         <div class="share-link">http://www.beibeitou.com/register?un=9C80DFBDC84CDAE2</div>
@@ -73,6 +73,43 @@
                     <p>CPS： CPS就是指个人直销代理推广的意思。 会员通过把自己的推广链接放在自己的空间，网站，朋友圈等方式进行代理推广，由此链接产生的会员交易额计入会员的直销代理成绩。按照代理成绩进行结算。</p>
                 </div>
             </div>
+            <div class="panel-content">
+                <p>成功推广会员数<span>0</span>人</p>
+                <p>直接推荐有效会员 <span>0</span> 名，无效会员 <span>0</span> 名， 产生CPS奖金 <span>0.0</span> 元</p>
+                <div class="table-wrapper">
+                    <p class="title">我的推广会员</p>
+                    <table>
+                        <tr>
+                            <th>序号</th>
+                            <th>会员名</th>
+                            <th>注册时间</th>
+                            <th>借款交易额</th>
+                            <th>理财交易额</th>
+                            <th>是否有效会员</th>
+                            <th>CPS奖金</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>13***</td>
+                            <td>2016-09-23 07:00</td>
+                            <td>12300</td>
+                            <td>0</td>
+                            <td>否</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>13***</td>
+                            <td>2016-09-23 07:00</td>
+                            <td>12300</td>
+                            <td>0</td>
+                            <td>否</td>
+                            <td>50</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
         </div>
     </div>
 </section>
