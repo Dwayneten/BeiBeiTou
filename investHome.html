@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/investHome.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <!-- javascript -->
-    <script type="text/javascript" src="js/investHome.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
     <!-- navbar -->
@@ -65,13 +65,13 @@
     <!-- info -->
     <section class="info-wrapper">
         <div class="tab-wrapper">
-            <div class="left current" id="tab-chain"  onclick="showTab(0);"><span>供应链信息</span></div>
-            <div class="left" id="tab-info"  onclick="showTab(1);"><span>信息披露</span></div>
-            <div class="left" id="tab-record"  onclick="showTab(2);"><span>投资记录</span></div>
-            <div class="left" id="tab-comment"  onclick="showTab(3);"><span>评论</span></div>
+            <div class="left current" id="tab-chain"  onclick="showTab('content-wrapper', 0);">供应链信息</div>
+            <div class="left" id="tab-info"  onclick="showTab('content-wrapper', 1);">信息披露</div>
+            <div class="left" id="tab-record"  onclick="showTab('content-wrapper', 2);">投资记录</div>
+            <div class="left" id="tab-comment"  onclick="showTab('content-wrapper', 3);">评论</div>
         </div>
         <div class="info-content">
-            <div id="content-chain">
+            <div class="content-wrapper current" id="content-chain">
                 <p>
                     1.借款人信息<br>
                     企业名称: 东莞市治中食品有限公司<br>
@@ -95,7 +95,7 @@
                     G.资金动态监控，供应链进程公示。<br>
                 </p>
             </div>
-            <div id="content-info">
+            <div class="content-wrapper" id="content-info">
                 <table>
                     <tr>
                         <td>借款企业</td>
@@ -140,7 +140,7 @@
                     <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
                 </div>
             </div>
-            <div id="content-record">
+            <div class="content-wrapper" id="content-record">
                 <table>
                     <tr>
                         <th class="col-1">序号</th>
@@ -249,7 +249,7 @@
                     </tr>
                 </table>
             </div>
-            <div id="content-comment">
+            <div class="content-wrapper" id="content-comment">
                 <p>我要提问：（字数在1-200之间）</p>
                 <textarea name="comment" id="comment"></textarea>
                 <div class="right button-group">
