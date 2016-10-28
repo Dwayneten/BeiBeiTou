@@ -19,3 +19,16 @@ function showTab(contentClassName, index) {
 
     return false;
 }
+function showWechat() {
+    var qrCode = document.getElementsByClassName('footer-col-qrcode')[0].firstElementChild;
+    qrCode.style.margin = '0 auto';
+    qrCode.style.width = '155px';
+    qrCode.style.height = '155px';
+    setTimeout(function () {
+        qrCode.style.width = '144px';
+        qrCode.style.height = '144px';
+        qrCode.style.margin = '10px auto';
+    }, 1000);
+
+    return false;
+}
