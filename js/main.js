@@ -43,3 +43,16 @@ function showWechat() {
 
     return false;
 }
+
+function showVideo() {
+    document.getElementsByClassName('video-wrapper')[0].style.display = 'block';
+    document.getElementsByClassName('video-bg')[0].style.display = 'block';
+    document.getElementById('my-video').firstElementChild.play();
+    return false;
+}
+function closeVideo() {
+    document.getElementsByClassName('video-wrapper')[0].style.display = 'none';
+    document.getElementsByClassName('video-bg')[0].style.display = 'none';
+    document.getElementById('my-video').firstElementChild.pause();
+    return false;
+}

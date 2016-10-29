@@ -209,7 +209,7 @@ footer {
 }
 .sidebar-wrapper {
   position: fixed;
-  z-index: 128;
+  z-index: 6;
   right: 0;
   top: 50%;
   transform: translateY(-50%);

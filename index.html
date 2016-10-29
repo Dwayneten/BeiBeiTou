@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link href="http://vjs.zencdn.net/5.11.9/video-js.css" rel="stylesheet">
     <!-- javascript -->
     <script type="text/javascript" src="js/jquery-3.1.min.js"></script>
     <script type="text/javascript" src="js/unslider-min.js"></script>
@@ -55,23 +56,41 @@
 
     <!-- count -->
     <section class="count-wrapper">
-        <div class="left">
-            <div class="count-num"><span>5,050,000.00</span>元</div>
-            <div class="count-description">累计投资金额</div>
+        <div class="left-panel">
+            <div class="row-1 clearfix">
+                <div class="left">
+                    <div class="count-num"><span>5,050,000.00</span>元</div>
+                    <div class="count-description">累计投资金额</div>
+                </div>
+                <div class="left">
+                    <div class="count-num"><span>5,167</span>位</div>
+                    <div class="count-description">累计注册人数</div>
+                </div>
+            </div>
+            <div class="row-2 clearfix">
+                <div class="left">
+                    <div class="count-num"><span>5,050</span>笔</div>
+                    <div class="count-description">交易总笔数</div>
+                </div>
+                <div class="left">
+                    <div class="count-num"><span>5,050,00.00</span>元</div>
+                    <div class="count-description">为投资人已赚</div>
+                </div>
+            </div>
         </div>
-        <div class="left">
-            <div class="count-num"><span>5,167</span>位</div>
-            <div class="count-description">累计注册人数</div>
-        </div>
-        <div class="left">
-            <div class="count-num"><span>5,050</span>笔</div>
-            <div class="count-description">交易总笔数</div>
-        </div>
-        <div class="left">
-            <div class="count-num"><span>5,050,00.00</span>元</div>
-            <div class="count-description">为投资人已赚</div>
+        <div class="right-panel">
+            <img src="img/play_btn.png" alt="" class="play-btn" onclick="showVideo();">
+            <img class="video-img" src="img/video_demo.png" onclick="showVideo();">
         </div>
     </section>
+    <div class="video-wrapper">
+        <span class="close-button" onclick="closeVideo()">x</span>
+        <video id="my-video" class="video-js" controls preload="auto" width="1200" height="675"
+               poster="img/video_demo.png" data-setup="{}">
+            <source src="video/site_top_video.mp4" type='video/mp4'>
+        </video>
+    </div>
+    <div class="video-bg" onclick="closeVideo();"></div>
 
     <!-- show -->
     <section class="show-wrapper">
@@ -330,5 +349,6 @@
         <a href=""> </a>
         <a href=""> </a>
     </section>
+    <script src="http://vjs.zencdn.net/5.11.9/video.js"></script>
 </body>
 </html>
