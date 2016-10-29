@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <!-- javascript -->
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.min.js"></script>
+    <script type="text/javascript" src="js/validation.js"></script>
 </head>
 <body>
 <!-- navbar -->
@@ -39,39 +41,43 @@
         <table>
             <tr>
                 <td class="col-1"><span>*</span>用户名</td>
-                <td class="col-2"><input type="text" name="name" id="name"><span class="hint">错误信息</span></td>
+                <td class="col-2"><input type="text" name="name" id="name" class="need-check"></td>
+                <td class="col-3"><span id="hint-name"></span></td>
             </tr>
             <tr>
                 <td class="col-1"><span>*</span>手机号码</td>
-                <td class="col-2"><input type="text" name="phone" id="phone"></td>
+                <td class="col-2"><input type="text" name="phone" id="phone" class="need-check"></td>
+                <td class="col-3"><span id="hint-phone"></span></td>
             </tr>
             <tr>
                 <td><span>*</span>登录密码</td>
-                <td><input type="password" name="password" id="password"></td>
+                <td class="col-2"><input type="password" name="password" id="password" class="need-check"></td>
+                <td class="col-3"><span id="hint-password"></span></td>
             </tr>
             <tr>
                 <td><span>*</span>确认密码</td>
-                <td><input type="password" name="ensurePassword" id="ensurePassword"></td>
+                <td class="col-2"><input type="password" name="ensurePassword" id="ensurePassword" class="need-check"></td>
+                <td class="col-3"><span id="hint-ensurePassword"></span></td>
             </tr>
             <tr>
                 <td><span>*</span>图形验证码</td>
-                <td><input type="text" name="code" id="code"><a href=""><img src="img/temp_code.png" alt=""></a></td>
+                <td class="col-2"><input type="text" name="code" id="code"><a href=""><img src="img/temp_code.png" alt=""></a></td>
             </tr>
             <tr>
                 <td><span>*</span>手机验证码</td>
-                <td><input type="text" name="messageCode" id="messageCode"><a href="" class="get-code">获取验证码</a></td>
+                <td class="col-2"><input type="text" name="messageCode" id="messageCode"><a href="" class="get-code">获取验证码</a></td>
             </tr>
             <tr>
                 <td>邀请码</td>
-                <td><input type="text" name="inventCode" id="inventCode"></td>
+                <td class="col-2"><input type="text" name="inventCode" id="inventCode"></td>
             </tr>
             <tr>
                 <td class="last-row"></td>
-                <td class="last-row"><input type="checkbox" id="agreement" name="agreement">我同意<a class="protocol" onclick="showUserProtocol();">《贝贝投用户协议》</a></td>
+                <td class="last-row protocol-wrapper"><input type="checkbox" id="agreement" name="agreement">我同意<a class="protocol" onclick="showUserProtocol();">《贝贝投用户协议》</a></td>
             </tr>
             <tr>
                 <td></td>
-                <td><input type="button" value="立即注册"></td>
+                <td><input type="button" value="立即注册" onclick="checkForm();"></td>
             </tr>
         </table>
     </div>

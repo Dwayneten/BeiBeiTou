@@ -1,3 +1,9 @@
+/**
+ * 切换面板的函数
+ * @param contentClassName - 面板容器的类名
+ * @param index - 标签的对应下标(第几个标签)
+ * @returns {boolean}
+ */
 function showTab(contentClassName, index) {
     // switch tab
     if (event.target.classList.contains('current'))
@@ -19,6 +25,11 @@ function showTab(contentClassName, index) {
 
     return false;
 }
+
+/**
+ * 当点击页脚微信时使微信公众号放大的动作
+ * @returns {boolean}
+ */
 function showWechat() {
     var qrCode = document.getElementsByClassName('footer-col-qrcode')[0].firstElementChild;
     qrCode.style.margin = '0 auto';
