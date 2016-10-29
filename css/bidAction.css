@@ -45,6 +45,26 @@
   color: #999;
   font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
+.form-wrapper .left-panel .col-3 span {
+  display: none;
+  color: #ed5f4e;
+  margin: 0;
+  font-size: 14px;
+  text-align: left;
+}
+.form-wrapper .left-panel .error input {
+  border: 1px solid #ed5f4e;
+}
+.form-wrapper .left-panel .error.col-3 span {
+  display: block;
+}
+.form-wrapper .left-panel .accept input {
+  border: 1px solid #e1e1e1;
+}
+.form-wrapper .left-panel .accept.col-3 span {
+  color: #63b97c;
+  display: block;
+}
 .form-wrapper .left-panel #province,
 .form-wrapper .left-panel #code {
   margin-right: 10px;
@@ -59,10 +79,10 @@
 .form-wrapper .left-panel #code-wrapper img {
   max-width: 115px;
 }
-.form-wrapper .left-panel #loanMany {
+.form-wrapper .left-panel #number {
   padding-right: 20px;
 }
-.form-wrapper .left-panel #loanMany + span {
+.form-wrapper .left-panel #number + span {
   font-size: 14px;
   color: #999;
   position: absolute;

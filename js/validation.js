@@ -35,14 +35,14 @@ function countCharNum(str) {
 function checkValue(value, id) {
     var len = countCharNum(value), hint = $('#hint-' + id)[0];
     if (id == "name") {
-        if (4 <= len && len <= 16) {
+        if (2 <= len && len <= 16) {
             hint.textContent = "名称可用";
             return true;
         } else if (len == 0) {
             hint.textContent = "名称不能为空";
             return false;
         } else {
-            hint.textContent = "名称长度不符合要求";
+            hint.textContent = "名称不符合要求";
             return false;
         }
     } else if (id == "password") {
@@ -81,10 +81,18 @@ function checkValue(value, id) {
         }
     } else if (id == "phone") {
         if (/^1[34578]\d{9}$/.test(value)) {
-            hint.textContent = "手机号码的格式正确";
+            hint.textContent = "手机号码格式正确";
             return true;
         } else {
             hint.textContent = "无效的手机号码";
+            return false;
+        }
+    } else if (id == 'number') {
+        if (/^[\d]+\.?[\d]+$/.test(value)) {
+            hint.textContent = "有效的数值";
+            return true;
+        } else {
+            hint.textContent = "无效的数值";
             return false;
         }
     }

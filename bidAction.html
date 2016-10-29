@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <!-- javascript -->
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.min.js"></script>
+    <script type="text/javascript" src="js/validation.js"></script>
 </head>
 <body>
 <!-- navbar -->
@@ -43,18 +45,18 @@
             <table>
                 <tr>
                     <td>真实姓名</td>
-                    <td><input type="text" name="realName" id="realName" placeholder="请输入您的真实姓名"></td>
-                    <td class="hint-text">请输入姓名</td>
+                    <td><input type="text" name="name" id="name" placeholder="请输入您的真实姓名" required class="need-check"></td>
+                    <td class="col-3"><span id="hint-name"></span></td>
                 </tr>
                 <tr>
                     <td>手机号码</td>
-                    <td><input type="text" name="telPhone" id="telPhone" placeholder="请输入您的手机号码"></td>
-                    <td class="hint-text">请输入手机号</td>
+                    <td><input type="text" name="phone" id="phone" placeholder="请输入您的手机号码" required  class="need-check"></td>
+                    <td class="col-3"><span id="hint-phone"></span></td>
                 </tr>
                 <tr>
                     <td>借款金额</td>
-                    <td><input type="text" name="loanMany" id="loanMany" placeholder="请输入您的借款金额"><span>元</span></td>
-                    <td class="hint-text">请输入金额</td>
+                    <td><input type="text" name="number" id="number" placeholder="请输入您的借款金额" required  class="need-check"><span>元</span></td>
+                    <td class="col-3"><span id="hint-number">请输入金额</span></td>
                 </tr>
                 <tr>
                     <td>借款类型</td>
@@ -65,7 +67,7 @@
                             </option>
                         </select>
                     </td>
-                    <td class="hint-text">请选择类型</td>
+                    <td class="col-3"><span id="hint-productsName">请选择类型</span></td>
                 </tr>
                 <tr>
                     <td>所在地区</td>
@@ -139,23 +141,23 @@
                             <option value="0" selected="">-- 请选择 --</option>
                         </select>
                     </td>
-                    <td class="hint-text">请选择地区</td>
+                    <td class="col-3"><span id="hint-area">请选择地区</span></td>
                 </tr>
                 <tr>
                     <td>验&nbsp;&nbsp;证&nbsp;&nbsp;码</td>
                     <td><input type="text" name="code" id="code" value><div id="code-wrapper"><a href=""><img src="img/temp_code.png" alt=""></a></div></td>
-                    <td class="hint-text">验证码不正确</td>
+                    <td class="col-3"><span id="hintcode">验证码不正确</span></td>
                 </tr>
             </table>
         </div>
         <div class="right-panel left">
             <span>备注</span>
-            <textarea name="beizhu" id="beizhu"></textarea>
-            <span class="hint-text">备注不能为空</span>
+            <textarea name="beizhu" id="beizhu" required></textarea>
+            <span class="hint-beizhu">备注不能为空</span>
         </div>
         <div class="button-panel clearfix">
             <p><input type="checkbox" id="agreement" name="agreement">我已阅读并同意<a onclick="showLoanDownProtocol();">《贝贝投借款协议》</a></p>
-            <input type="button" value="提交申请" onclick="applyLoan()">
+            <input type="button" value="提交申请" onclick="if(checkForm()) applyLoan();">
         </div>
     </div>
 </section>
