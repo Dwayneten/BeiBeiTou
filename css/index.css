@@ -349,23 +349,34 @@
   height: 100px;
   margin: 40px auto;
   overflow: hidden;
-  position: relative;
 }
-.partner-logo-wrapper li {
-  position: absolute;
+.partner-logo-wrapper a {
+  margin: 0 50px;
 }
-.partner-logo-1 {
-  left: 0%;
+.partner-logo-wrapper ~ nav {
+  box-shadow: none;
 }
-.partner-logo-2 {
-  left: 20%;
+.partner-logo-wrapper ~ nav li {
+  border-color: #333;
 }
-.partner-logo-3 {
-  left: 40%;
+.partner-logo-wrapper ~ nav .unslider-active {
+  background-color: #333 !important;
 }
-.partner-logo-4 {
-  left: 60%;
+.friends {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  background-color: #fcfcfc;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
-.partner-logo-5 {
-  left: 80%;
+.friends .wrapper {
+  width: 1080px;
+  margin: 0 auto;
+}
+.friends span {
+  color: #ed5f4e;
+  font-weight: bold;
+}
+.friends a {
+  margin-left: 50px;
 }
